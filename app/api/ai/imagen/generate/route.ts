@@ -1,7 +1,48 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { googleAxios } from '@/lib/axios-config';
+import axios, { type AxiosInstance, type InternalAxiosRequestConfig, type AxiosError } from 'axios';
 import { log, logError } from '@/lib/logger';
 import { auth } from '@/auth';
+
+// 创建 Google Vertex AI axios 实例(服务器端)
+async function createGoogleAxiosInstance(): Promise<AxiosInstance> {
+  const GOOGLE_PROJECT_ID = process.env.GOOGLE_PROJECT_ID;
+  const GOOGLE_LOCATION = process.env.GOOGLE_LOCATION || 'us-central1';
+
+  const VERTEX_AI_BASE_URL = GOOGLE_PROJECT_ID && GOOGLE_LOCATION
+    ? `https://${GOOGLE_LOCATION}-aiplatform.googleapis.com/v1/projects/${GOOGLE_PROJECT_ID}/locations/${GOOGLE_LOCATION}`
+    : '';
+
+  if (!VERTEX_AI_BASE_URL) {
+    throw new Error('Google Vertex AI credentials not configured');
+  }
+
+  const instance = axios.create({
+    baseURL: VERTEX_AI_BASE_URL,
+    timeout: 300000,
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+
+  // 请求拦截器 - 添加 OAuth2 令牌
+  instance.interceptors.request.use(
+    async (config: InternalAxiosRequestConfig) => {
+      const { GoogleAuth } = await import('google-auth-library');
+
+      const auth = new GoogleAuth({
+        scopes: 'https://www.googleapis.com/auth/cloud-platform',
+      });
+
+      const client = await auth.getClient();
+      const accessToken = await client.getAccessToken();
+
+      config.headers['Authorization'] = `Bearer ${accessToken}`;
+      return config;
+    }
+  );
+
+  return instance;
+}
 
 export async function POST(request: NextRequest) {
   try {
@@ -69,6 +110,7 @@ export async function POST(request: NextRequest) {
 
     log('[Imagen Generate] 调用 Google Vertex AI API:', endpoint);
 
+    const googleAxios = await createGoogleAxiosInstance();
     const response = await googleAxios.post(endpoint, requestBody);
 
     log('[Imagen Generate] 响应成功:', {

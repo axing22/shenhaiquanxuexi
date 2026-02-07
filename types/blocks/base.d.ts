@@ -49,6 +49,7 @@ export interface NavItem {
   target?: string;
   is_active?: boolean;
   is_expand?: boolean;
+  disabled?: boolean;
   className?: string;
   children?: NavItem[];
   onClick?: () => void;
