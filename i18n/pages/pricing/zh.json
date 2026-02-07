@@ -1,0 +1,272 @@
+{
+  "pricing": {
+    "name": "pricing",
+    "label": "定价",
+    "title": "定价方案",
+    "description": "选择最适合您需求的计划",
+    "groups": [
+      {
+        "name": "monthly",
+        "title": "月付"
+      },
+      {
+        "name": "yearly",
+        "title": "年付"
+      }
+    ],
+    "items": [
+      {
+        "group": "monthly",
+        "title": "免费会员",
+        "description": "初始积分 1000",
+        "features_title": "包含",
+        "features": [
+          "初始积分 1000",
+          "免费图片转提示词",
+          "无限模板访问"
+        ],
+        "interval": "month",
+        "amount": 0,
+        "cn_amount": 0,
+        "currency": "USD",
+        "price": "$0",
+        "unit": "/月",
+        "is_featured": false,
+        "button": {
+          "title": "立即开始",
+          "url": "/",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "free",
+        "product_name": "免费会员",
+        "credits": 1000,
+        "valid_months": 0
+      },
+      {
+        "group": "monthly",
+        "title": "基础会员",
+        "description": "每月重置 11000 积分",
+        "features_title": "包含",
+        "features": [
+          "每月重置 11000 积分",
+          "免费图片转提示词",
+          "无限模板访问",
+          "访问高清分辨率（最高 720P）",
+          "积分包额外获得 10%",
+          "3 个并发生成",
+          "更快的生成速度"
+        ],
+        "interval": "month",
+        "amount": 990,
+        "cn_amount": 6900,
+        "currency": "USD",
+        "price": "$9.9",
+        "unit": "/月",
+        "is_featured": false,
+        "button": {
+          "title": "立即购买",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "basic_monthly",
+        "product_name": "基础会员月付",
+        "credits": 11000,
+        "valid_months": 1,
+        "planId": 9
+      },
+      {
+        "group": "monthly",
+        "title": "标准会员",
+        "description": "每月重置 30000 积分",
+        "label": "最受欢迎",
+        "features_title": "包含所有基础会员权益",
+        "features": [
+          "每月重置 30000 积分",
+          "免费图片转提示词",
+          "无限模板访问",
+          "访问高清分辨率（最高 1080P）",
+          "积分包额外获得 30%",
+          "5 个并发生成",
+          "更快的生成速度",
+          "批量创建"
+        ],
+        "interval": "month",
+        "amount": 2900,
+        "cn_amount": 19900,
+        "currency": "USD",
+        "price": "$29",
+        "unit": "/月",
+        "is_featured": true,
+        "button": {
+          "title": "立即购买",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "standard_monthly",
+        "product_name": "标准会员月付",
+        "credits": 30000,
+        "valid_months": 1,
+        "planId": 11
+      },
+      {
+        "group": "monthly",
+        "title": "专业会员",
+        "description": "每月重置 60000 积分",
+        "features_title": "包含所有标准会员权益",
+        "features": [
+          "每月重置 60000 积分",
+          "免费图片转提示词",
+          "无限模板访问",
+          "访问高清分辨率（最高 1080P）",
+          "积分包额外获得 50%",
+          "8 个并发生成",
+          "更快的生成速度",
+          "批量创建"
+        ],
+        "interval": "month",
+        "amount": 5900,
+        "cn_amount": 39900,
+        "currency": "USD",
+        "price": "$59",
+        "unit": "/月",
+        "is_featured": false,
+        "button": {
+          "title": "立即购买",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "professional_monthly",
+        "product_name": "专业会员月付",
+        "credits": 60000,
+        "valid_months": 1,
+        "planId": 10
+      },
+      {
+        "group": "yearly",
+        "title": "免费会员",
+        "description": "初始积分 1000",
+        "features_title": "包含",
+        "features": [
+          "初始积分 1000",
+          "免费图片转提示词",
+          "无限模板访问"
+        ],
+        "interval": "year",
+        "amount": 0,
+        "cn_amount": 0,
+        "currency": "USD",
+        "price": "$0",
+        "unit": "/年",
+        "is_featured": false,
+        "button": {
+          "title": "立即开始",
+          "url": "/",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "free",
+        "product_name": "免费会员",
+        "credits": 1000,
+        "valid_months": 0
+      },
+      {
+        "group": "yearly",
+        "title": "基础会员",
+        "description": "每月重置 11000 积分",
+        "features_title": "包含",
+        "features": [
+          "每月重置 11000 积分",
+          "免费图片转提示词",
+          "无限模板访问",
+          "访问高清分辨率（最高 720P）",
+          "积分包额外获得 10%",
+          "3 个并发生成",
+          "更快的生成速度"
+        ],
+        "interval": "year",
+        "amount": 9900,
+        "cn_amount": 69900,
+        "currency": "USD",
+        "price": "$99",
+        "unit": "/年",
+        "is_featured": false,
+        "button": {
+          "title": "立即购买",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "basic_yearly",
+        "product_name": "基础会员年付",
+        "credits": 11000,
+        "valid_months": 12,
+        "planId": 9
+      },
+      {
+        "group": "yearly",
+        "title": "标准会员",
+        "description": "每月重置 30000 积分",
+        "label": "最受欢迎",
+        "features_title": "包含所有基础会员权益",
+        "features": [
+          "每月重置 30000 积分",
+          "免费图片转提示词",
+          "无限模板访问",
+          "访问高清分辨率（最高 1080P）",
+          "积分包额外获得 30%",
+          "5 个并发生成",
+          "更快的生成速度",
+          "批量创建"
+        ],
+        "interval": "year",
+        "amount": 28800,
+        "cn_amount": 194800,
+        "currency": "USD",
+        "price": "$288",
+        "unit": "/年",
+        "is_featured": true,
+        "button": {
+          "title": "立即购买",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "standard_yearly",
+        "product_name": "标准会员年付",
+        "credits": 30000,
+        "valid_months": 12,
+        "planId": 11
+      },
+      {
+        "group": "yearly",
+        "title": "专业会员",
+        "description": "每月重置 60000 积分",
+        "features_title": "包含所有标准会员权益",
+        "features": [
+          "每月重置 60000 积分",
+          "免费图片转提示词",
+          "无限模板访问",
+          "访问高清分辨率（最高 1080P）",
+          "积分包额外获得 50%",
+          "8 个并发生成",
+          "更快的生成速度",
+          "批量创建"
+        ],
+        "interval": "year",
+        "amount": 56600,
+        "cn_amount": 383000,
+        "currency": "USD",
+        "price": "$566",
+        "unit": "/年",
+        "is_featured": false,
+        "button": {
+          "title": "立即购买",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "professional_yearly",
+        "product_name": "专业会员年付",
+        "credits": 60000,
+        "valid_months": 12,
+        "planId": 10
+      }
+    ]
+  }
+}

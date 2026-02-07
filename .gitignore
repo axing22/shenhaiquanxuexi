@@ -1,0 +1,58 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+nul
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env.development
+.env.production
+
+# vercel
+.vercel
+.tmp
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+Makefile
+.wrangler
+wrangler.toml
+supabase
+
+# Environment variables
+.env
+.env.*
+.env*.local
+*.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Downloaded files
+gcloud-cli.tar.gz
+*.tar.gz

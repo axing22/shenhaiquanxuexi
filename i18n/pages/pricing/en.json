@@ -1,0 +1,272 @@
+{
+  "pricing": {
+    "name": "pricing",
+    "label": "Pricing",
+    "title": "Pricing",
+    "description": "Select the plan that best suits your needs",
+    "groups": [
+      {
+        "name": "monthly",
+        "title": "Monthly"
+      },
+      {
+        "name": "yearly",
+        "title": "Yearly"
+      }
+    ],
+    "items": [
+      {
+        "group": "monthly",
+        "title": "Free Member",
+        "description": "Initial credits 1000",
+        "features_title": "Includes",
+        "features": [
+          "Initial credits 1000",
+          "Free Pixmind",
+          "Unlimited Template access"
+        ],
+        "interval": "month",
+        "amount": 0,
+        "cn_amount": 0,
+        "currency": "USD",
+        "price": "$0",
+        "unit": "/month",
+        "is_featured": false,
+        "button": {
+          "title": "Get Started",
+          "url": "/",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "free",
+        "product_name": "Free Member",
+        "credits": 1000,
+        "valid_months": 0
+      },
+      {
+        "group": "monthly",
+        "title": "Basic Member",
+        "description": "11000 Credits reset monthly",
+        "features_title": "Includes",
+        "features": [
+          "11000 Credits reset monthly",
+          "Free Pixmind",
+          "Unlimited Template access",
+          "Access to HD resolution (up to 720P)",
+          "Get 10% extra on Credit Packs",
+          "3 concurrent generation",
+          "Faster generations"
+        ],
+        "interval": "month",
+        "amount": 990,
+        "cn_amount": 6900,
+        "currency": "USD",
+        "price": "$9.9",
+        "unit": "/month",
+        "is_featured": false,
+        "button": {
+          "title": "Buy Now",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "basic_monthly",
+        "product_name": "Basic Member Monthly",
+        "credits": 11000,
+        "valid_months": 1,
+        "planId": 9
+      },
+      {
+        "group": "monthly",
+        "title": "Standard Member",
+        "description": "30000 Credits reset monthly",
+        "label": "Most Popular",
+        "features_title": "Includes all Basic benefits",
+        "features": [
+          "30000 Credits reset monthly",
+          "Free Pixmind",
+          "Unlimited Template access",
+          "Access to HD resolution (up to 1080P)",
+          "Get 30% extra on Credit Packs",
+          "5 concurrent generation",
+          "Faster generations",
+          "Batch Create"
+        ],
+        "interval": "month",
+        "amount": 2900,
+        "cn_amount": 19900,
+        "currency": "USD",
+        "price": "$29",
+        "unit": "/month",
+        "is_featured": true,
+        "button": {
+          "title": "Buy Now",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "standard_monthly",
+        "product_name": "Standard Member Monthly",
+        "credits": 30000,
+        "valid_months": 1,
+        "planId": 11
+      },
+      {
+        "group": "monthly",
+        "title": "Professional Member",
+        "description": "60000 Credits reset monthly",
+        "features_title": "Includes all Standard benefits",
+        "features": [
+          "60000 Credits reset monthly",
+          "Free Pixmind",
+          "Unlimited Template access",
+          "Access to HD resolution (up to 1080P)",
+          "Get 50% extra on Credit Packs",
+          "8 concurrent generation",
+          "Faster generations",
+          "Batch Create"
+        ],
+        "interval": "month",
+        "amount": 5900,
+        "cn_amount": 39900,
+        "currency": "USD",
+        "price": "$59",
+        "unit": "/month",
+        "is_featured": false,
+        "button": {
+          "title": "Buy Now",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "professional_monthly",
+        "product_name": "Professional Member Monthly",
+        "credits": 60000,
+        "valid_months": 1,
+        "planId": 10
+      },
+      {
+        "group": "yearly",
+        "title": "Free Member",
+        "description": "Initial credits 1000",
+        "features_title": "Includes",
+        "features": [
+          "Initial credits 1000",
+          "Free Pixmind",
+          "Unlimited Template access"
+        ],
+        "interval": "year",
+        "amount": 0,
+        "cn_amount": 0,
+        "currency": "USD",
+        "price": "$0",
+        "unit": "/year",
+        "is_featured": false,
+        "button": {
+          "title": "Get Started",
+          "url": "/",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "free",
+        "product_name": "Free Member",
+        "credits": 1000,
+        "valid_months": 0
+      },
+      {
+        "group": "yearly",
+        "title": "Basic Member",
+        "description": "11000 Credits reset monthly",
+        "features_title": "Includes",
+        "features": [
+          "11000 Credits reset monthly",
+          "Free Pixmind",
+          "Unlimited Template access",
+          "Access to HD resolution (up to 720P)",
+          "Get 10% extra on Credit Packs",
+          "3 concurrent generation",
+          "Faster generations"
+        ],
+        "interval": "year",
+        "amount": 9900,
+        "cn_amount": 69900,
+        "currency": "USD",
+        "price": "$99",
+        "unit": "/year",
+        "is_featured": false,
+        "button": {
+          "title": "Buy Now",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "basic_yearly",
+        "product_name": "Basic Member Yearly",
+        "credits": 11000,
+        "valid_months": 12,
+        "planId": 9
+      },
+      {
+        "group": "yearly",
+        "title": "Standard Member",
+        "description": "30000 Credits reset monthly",
+        "label": "Most Popular",
+        "features_title": "Includes all Basic benefits",
+        "features": [
+          "30000 Credits reset monthly",
+          "Free Pixmind",
+          "Unlimited Template access",
+          "Access to HD resolution (up to 1080P)",
+          "Get 30% extra on Credit Packs",
+          "5 concurrent generation",
+          "Faster generations",
+          "Batch Create"
+        ],
+        "interval": "year",
+        "amount": 28800,
+        "cn_amount": 194800,
+        "currency": "USD",
+        "price": "$288",
+        "unit": "/year",
+        "is_featured": true,
+        "button": {
+          "title": "Buy Now",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "standard_yearly",
+        "product_name": "Standard Member Yearly",
+        "credits": 30000,
+        "valid_months": 12,
+        "planId": 11
+      },
+      {
+        "group": "yearly",
+        "title": "Professional Member",
+        "description": "60000 Credits reset monthly",
+        "features_title": "Includes all Standard benefits",
+        "features": [
+          "60000 Credits reset monthly",
+          "Free Pixmind",
+          "Unlimited Template access",
+          "Access to HD resolution (up to 1080P)",
+          "Get 50% extra on Credit Packs",
+          "8 concurrent generation",
+          "Faster generations",
+          "Batch Create"
+        ],
+        "interval": "year",
+        "amount": 56600,
+        "cn_amount": 383000,
+        "currency": "USD",
+        "price": "$566",
+        "unit": "/year",
+        "is_featured": false,
+        "button": {
+          "title": "Buy Now",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "professional_yearly",
+        "product_name": "Professional Member Yearly",
+        "credits": 60000,
+        "valid_months": 12,
+        "planId": 10
+      }
+    ]
+  }
+}

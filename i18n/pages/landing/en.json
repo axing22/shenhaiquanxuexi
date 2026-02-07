@@ -1,0 +1,235 @@
+{
+  "template": "pixmind-template-one",
+  "theme": "light",
+  "header": {
+    "brand": {
+      "title": "Pixmind",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "Pixmind"
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "AI Image",
+          "icon": "RiImageAiLine",
+          "children": [
+            {
+              "title": "Nano Banana",
+              "description": "Gemini 2.5 Flash image editor",
+              "url": "/txt-to-image/nano-banana",
+              "icon": "RiFlashlightLine"
+            }
+          ]
+        },
+        {
+          "title": "Image Tools",
+          "icon": "RiImageLine",
+          "children": [
+            {
+              "title": "Image to Text",
+              "icon": "RiImageEditLine",
+              "children": [
+                {
+                  "title": "ImageToPrompt (Free)",
+                  "description": "Convert images to prompts",
+                  "url": "/image-to-prompt",
+                  "icon": "RiImageEditLine"
+                }
+              ]
+            },
+            {
+              "title": "Image Compress (Free)",
+              "description": "Compress images without quality loss",
+              "url": "/image-compress",
+              "icon": "RiFileReduceLine"
+            }
+          ]
+        },
+        {
+          "title": "Pricing",
+          "url": "/pricing",
+          "icon": "RiMoneyDollarCircleLine"
+        }
+      ]
+    },
+    "buttons": [
+      {
+        "title": "Sign In",
+        "url": "/auth/signin",
+        "variant": "default",
+        "target": "_self"
+      }
+    ],
+    "show_sign": true,
+    "show_theme": true,
+    "show_locale": true
+  },
+  "homepage": {
+    "hero": {
+      "title_free": "Free",
+      "title_main": "Work side by side with AI to turn ideas into reality.",
+      "title_generator": "Generator",
+      "subtitle": "From concept to creation, PixMind fuels your creative fire.",
+      "description": "Convert any image to detailed prompts instantly. Perfect for Midjourney, DALL-E, Stable Diffusion and more.",
+      "try_now": "Try it now!",
+      "tutorials": "Tutorials"
+    },
+    "features": {
+      "image_to_prompt": {
+        "title": "Image to Prompt Converter",
+        "description": "Advanced image to prompt generator - Convert any image to detailed AI prompts instantly"
+      },
+      "ai_image_generate": {
+        "title": "AI Image Generate",
+        "description": "Transform your text prompts into stunning AI-generated images with advanced models"
+      },
+      "ai_video_generate": {
+        "title": "AI Video Generate",
+        "description": "Create amazing AI-generated videos from text or images with cutting-edge video models"
+      }
+    },
+    "suite": {
+      "title": "Professional Image to Prompt Generator Suite",
+      "description": "The most comprehensive image prompt generator toolkit - From image to prompt and back to image"
+    },
+    "why_choose": {
+      "title": "Why Choose Our Image to Prompt Generator?",
+      "what_is": {
+        "title": "What is Image to Prompt?",
+        "text_1": "Image to prompt",
+        "text_2": " technology uses advanced AI to analyze any image and generate detailed text descriptions that can be used as prompts for AI art generators. Our ",
+        "text_3": "image to prompt generator",
+        "text_4": " supports all major platforms including Midjourney, DALL-E, and Stable Diffusion.",
+        "text_5": "Whether you're looking to recreate a style, understand composition, or generate similar artwork, our ",
+        "text_6": "image prompt",
+        "text_7": " tools provide the perfect solution."
+      },
+      "how_works": {
+        "title": "How Our Prompt Generator Works",
+        "text_1": "Our ",
+        "text_2": "prompt generator",
+        "text_3": " uses state-of-the-art vision AI models to understand images at multiple levels - from basic objects and scenes to artistic styles, composition, and mood.",
+        "step_1": "Upload any image to our image prompt analyzer",
+        "step_2": "AI processes and extracts detailed descriptions",
+        "step_3": "Receive optimized prompts for your preferred AI tool",
+        "step_4": "Use generated prompts to create new AI artwork"
+      },
+      "features_section": {
+        "title": "Features of Our Image to Prompt Generator",
+        "accurate_analysis_title": "✨ Accurate Image Analysis",
+        "accurate_analysis_desc": "Our image to prompt AI accurately identifies objects, styles, colors, and composition",
+        "fast_generation_title": "🚀 Fast Prompt Generation",
+        "fast_generation_desc": "Generate image prompts in seconds with our optimized prompt generator engine",
+        "multi_platform_title": "🎨 Multi-Platform Support",
+        "multi_platform_desc": "Image prompts optimized for Midjourney, DALL-E, Stable Diffusion, and more",
+        "customizable_title": "🔧 Customizable Output",
+        "customizable_desc": "Adjust prompt generator settings for different styles and detail levels",
+        "smart_enhancement_title": "💡 Smart Enhancement",
+        "smart_enhancement_desc": "Our image to prompt generator adds artistic keywords automatically",
+        "free_to_use_title": "🆓 Free to Use",
+        "free_to_use_desc": "Start using our image prompt generator completely free, no credit card required"
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1_question": "What is an image to prompt generator?",
+      "q1_answer": "An image to prompt generator is an AI tool that analyzes images and converts them into detailed text descriptions (prompts) that can be used with AI image generation tools like Midjourney, DALL-E, or Stable Diffusion.",
+      "q2_question": "How accurate is the image prompt generation?",
+      "q2_answer": "Our image to prompt technology uses advanced AI models to achieve high accuracy in identifying objects, styles, colors, composition, and artistic elements, providing detailed and usable prompts for AI art generation.",
+      "q3_question": "Can I use generated prompts with any AI tool?",
+      "q3_answer": "Yes! Our prompt generator creates versatile image prompts that work with all major AI art platforms including Midjourney, DALL-E, Stable Diffusion, Leonardo AI, and more.",
+      "q4_question": "Is the image to prompt generator free?",
+      "q4_answer": "Yes, our basic image to prompt generator is completely free to use. We offer premium features for professional users who need advanced prompt generation capabilities."
+    }
+  },
+  "footer": {
+    "name": "footer",
+    "brand": {
+      "title": "Pixmind",
+      "description": "Transform your creative vision into reality with our AI-powered prompt generation tools. Convert images to prompts, enhance text prompts, and generate stunning visuals.",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "Pixmind"
+      },
+      "url": "/"
+    },
+    "copyright": "© 2025 • Pixmind. All rights reserved.  pixmind.service@aimix.pro",
+    "nav": {
+      "items": [
+        {
+          "title": "AI Image",
+          "children": [
+            {
+              "title": "Nano Banana",
+              "url": "/txt-to-image/nano-banana",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "Image Tools",
+          "children": [
+            {
+              "title": "Image to Prompt (Free)",
+              "url": "/image-to-prompt",
+              "target": "_self"
+            },
+            {
+              "title": "Image Compress (Free)",
+              "url": "/image-compress",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "Support & Legal",
+          "children": [
+            {
+              "title": "Contact Us",
+              "url": "/contact",
+              "target": "_self"
+            },
+            {
+              "title": "About Us",
+              "url": "/about",
+              "target": "_self"
+            },
+            {
+              "title": "API",
+              "url": "/developer/api",
+              "target": "_self"
+            },
+            {
+              "title": "Affiliate Program",
+              "url": "/affiliate",
+              "target": "_self"
+            },
+            {
+              "title": "Privacy Policy",
+              "url": "/privacy-policy",
+              "target": "_self"
+            },
+            {
+              "title": "Terms of Service",
+              "url": "/terms-of-service",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "Email",
+          "icon": "RiMailLine",
+          "url": "mailto:pixmind.service@aimix.pro",
+          "target": "_self"
+        }
+      ]
+    }
+  }
+}

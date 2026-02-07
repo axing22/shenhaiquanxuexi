@@ -1,0 +1,216 @@
+/* Basic editor styles */
+.tiptap {
+  outline: none;
+  max-width: 100%;
+  min-height: 400px;
+  padding: 0.5rem 1rem;
+  background: var(--background);
+  border-radius: var(--radius-lg);
+  transition: all 0.2s ease;
+}
+
+.tiptap:focus {
+  /* Remove focus border */
+}
+
+.tiptap :first-child {
+  margin-top: 0;
+}
+
+/* Typography */
+.tiptap {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--foreground);
+}
+
+/* List styles */
+.tiptap ul,
+.tiptap ol {
+  padding: 0 1.25rem;
+  margin: 1.25rem 0;
+  color: var(--foreground);
+}
+
+.tiptap ul {
+  list-style-type: disc;
+}
+
+.tiptap ol {
+  list-style-type: decimal;
+}
+
+.tiptap ul ul,
+.tiptap ol ul {
+  list-style-type: circle;
+}
+
+.tiptap ul ul ul,
+.tiptap ol ul ul {
+  list-style-type: square;
+}
+
+.tiptap ol ol,
+.tiptap ul ol {
+  list-style-type: lower-alpha;
+}
+
+.tiptap ol ol ol,
+.tiptap ul ol ol {
+  list-style-type: lower-roman;
+}
+
+.tiptap ul li,
+.tiptap ol li {
+  margin: 0.5rem 0;
+  padding-left: 0.5rem;
+}
+
+.tiptap ul li p,
+.tiptap ol li p {
+  margin: 0.25rem 0;
+}
+
+/* Task list styles */
+.tiptap ul[data-type="taskList"] {
+  list-style: none;
+  padding: 0;
+}
+
+.tiptap ul[data-type="taskList"] li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0.5rem 0;
+}
+
+.tiptap ul[data-type="taskList"] li > label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.tiptap ul[data-type="taskList"] li > label > input[type="checkbox"] {
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+  background: var(--background);
+  border-radius: 0.25rem;
+  transition: all 0.2s ease;
+}
+
+.tiptap ul[data-type="taskList"] li > label > input[type="checkbox"]:checked {
+  background-color: var(--primary);
+}
+
+/* Heading styles */
+.tiptap h1,
+.tiptap h2,
+.tiptap h3,
+.tiptap h4,
+.tiptap h5,
+.tiptap h6 {
+  line-height: 1.2;
+  margin: 1rem 0;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+  color: var(--foreground);
+}
+
+.tiptap h1 {
+  font-size: 1.5rem;
+}
+
+.tiptap h2 {
+  font-size: 1.25rem;
+}
+
+.tiptap h3 {
+  font-size: 1.125rem;
+}
+
+.tiptap h4 {
+  font-size: 1rem;
+}
+
+.tiptap h5,
+.tiptap h6 {
+  font-size: 0.875rem;
+}
+
+/* Code block styles */
+.tiptap pre {
+  background: var(--muted);
+  border-radius: var(--radius-lg);
+  padding: 1rem;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+}
+
+.tiptap pre code {
+  background: none;
+  color: var(--foreground);
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  padding: 0;
+}
+
+.tiptap code {
+  background-color: var(--muted);
+  border-radius: var(--radius);
+  color: var(--foreground);
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  padding: 0.2em 0.4em;
+}
+
+/* Blockquote styles */
+.tiptap blockquote {
+  border-left: 4px solid var(--primary);
+  margin: 2rem 0;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  color: var(--muted-foreground);
+  background: color-mix(in srgb, var(--muted) 50%, transparent);
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+}
+
+.tiptap blockquote p {
+  margin: 0.5rem 0;
+  font-style: italic;
+}
+
+/* Horizontal rule styles */
+.tiptap hr {
+  border: none;
+  border-top: 2px solid var(--border);
+  margin: 3rem 0;
+}
+
+/* Paragraph styles */
+.tiptap p {
+  margin: 1.25rem 0;
+  line-height: 1.5;
+}
+
+/* Link styles */
+.tiptap a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.tiptap a:hover {
+  border-bottom-color: currentColor;
+  opacity: 0.85;
+}
+
+/* Selection styles */
+.tiptap ::selection {
+  background: color-mix(in srgb, var(--primary) 20%, transparent);
+}

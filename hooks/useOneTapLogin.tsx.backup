@@ -1,0 +1,61 @@
+"use client";
+
+import { useEffect } from "react";
+import { useSession, signIn } from "next-auth/react";
+
+declare global {
+  interface Window {
+    google?: any;
+  }
+}
+
+export default function useOneTapLogin() {
+  const { data: session, status } = useSession();
+  const isOneTapEnabled = process.env.NEXT_PUBLIC_AUTH_GOOGLE_ONE_TAP_ENABLED === "true";
+  const clientId = process.env.NEXT_PUBLIC_AUTH_GOOGLE_ID;
+
+  useEffect(() {
+    if (!isOneTapEnabled || !clientId || status === "loading" || session) {
+      return;
+    }
+
+    // Load Google Identity Services script
+    const script = document.createElement("script");
+    script.src = "https://accounts.google.com/gsi/client";
+    script.async = true;
+    script.defer = true;
+    document.head.appendChild(script);
+
+    script.onload = () => {
+      if (window.google) {
+        window.google.accounts.id.initialize({
+          client_id: clientId,
+          callback: async (response: any) => {
+            try {
+              await signIn("google-one-tap", {
+                credential: response.credential,
+                redirect: false,
+              });
+            } catch (error) {
+              console.error("Google One Tap sign-in failed:", error);
+            }
+          },
+        });
+
+        window.google.accounts.id.prompt((notification: any) => {
+          if (notification.isNotDisplayed()) {
+            console.log("One Tap not displayed:", notification.getNotDisplayedReason());
+          } else if (notification.isSkippedMoment()) {
+            console.log("One Tap skipped:", notification.getSkippedReason());
+          }
+        });
+      }
+    };
+
+    return () => {
+      if (script.parentNode) {
+        script.parentNode.removeChild(script);
+      }
+    };
+  }, [isOneTapEnabled, clientId, session, status]);
+}

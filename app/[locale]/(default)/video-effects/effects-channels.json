@@ -1,0 +1,82 @@
+[
+  {
+    "channel_id": 0,
+    "channel_name": "All",
+    "i18n_json": {
+      "en-US": { "channel_name": "All" },
+      "zh-CN": { "channel_name": "全部" }
+    }
+  },
+  {
+    "channel_id": 361781623777792,
+    "channel_name": "E-commerce",
+    "i18n_json": {
+      "en-US": { "channel_name": "E-commerce" },
+      "zh-CN": { "channel_name": "电商" }
+    }
+  },
+  {
+    "channel_id": 353306948568640,
+    "channel_name": "Viral growth",
+    "i18n_json": {
+      "en-US": { "channel_name": "Viral growth" },
+      "zh-CN": { "channel_name": "病毒式传播" }
+    }
+  },
+  {
+    "channel_id": 353287047272000,
+    "channel_name": "Emotion",
+    "i18n_json": {
+      "en-US": { "channel_name": "Emotion" },
+      "zh-CN": { "channel_name": "情感" }
+    }
+  },
+  {
+    "channel_id": 353306047202880,
+    "channel_name": "Restyle",
+    "i18n_json": {
+      "en-US": { "channel_name": "Restyle" },
+      "zh-CN": { "channel_name": "风格重塑" }
+    }
+  },
+  {
+    "channel_id": 353306210022976,
+    "channel_name": "Dancing",
+    "i18n_json": {
+      "en-US": { "channel_name": "Dancing" },
+      "zh-CN": { "channel_name": "舞蹈" }
+    }
+  },
+  {
+    "channel_id": 353306295256640,
+    "channel_name": "Character",
+    "i18n_json": {
+      "en-US": { "channel_name": "Character" },
+      "zh-CN": { "channel_name": "角色" }
+    }
+  },
+  {
+    "channel_id": 353307184180800,
+    "channel_name": "Fashion",
+    "i18n_json": {
+      "en-US": { "channel_name": "Fashion" },
+      "zh-CN": { "channel_name": "时尚" }
+    }
+  },
+  {
+    "channel_id": 353307292059200,
+    "channel_name": "Furry friends",
+    "i18n_json": {
+      "en-US": { "channel_name": "Furry friends" },
+      "zh-CN": { "channel_name": "毛茸伙伴" }
+    }
+  },
+  {
+    "channel_id": 353305882990144,
+    "channel_name": "Festival",
+    "i18n_json": {
+      "en-US": { "channel_name": "Festival" },
+      "zh-CN": { "channel_name": "节日" }
+    }
+  }
+]

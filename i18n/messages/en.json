@@ -1,0 +1,1412 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "previous": "Previous",
+    "next": "Next",
+    "page_info": "Page {{current}} of {{total}}"
+  },
+  "metadata": {
+    "title": "Pixmind - AI Image Generation & Analysis Platform",
+    "description": "Transform images into detailed prompts and generate stunning AI images. Professional AI tools for image analysis and creation.",
+    "keywords": "Pixmind, AI image generation, image analysis, text to image, image to text, AI art, prompt generator"
+  },
+  "seo": {
+    "home": {
+      "title": "Free AI Pixmind Generator - Create Professional Avatar Videos | Pixmind",
+      "description": "Professional AI Pixmind video platform with avatar cloning, voice cloning, and 175+ language TTS. Create HD Pixmind videos in 1 minute without cameras or actors. Free trial.",
+      "keywords": "Pixmind,AI avatar,avatar video,virtual presenter,avatar cloning,voice cloning,TTS synthesis,text to video,virtual human generator"
+    },
+    "studio": {
+      "title": "Online Pixmind Video Studio - AI Avatar Creator | Pixmind",
+      "description": "Powerful online Pixmind video creation tool. Support text-to-video, multilingual dubbing, custom avatars. Real-time preview, one-click generation for education, marketing, and training.",
+      "keywords": "Pixmind creator,online video generator,AI video tool,text to video,avatar studio,video creation platform"
+    },
+    "avatars": {
+      "title": "1000+ AI Pixmind Avatars Library - Free Avatar Templates | Pixmind",
+      "description": "1000+ professional AI avatars for business, education, service, sales, and entertainment. Support custom cloning, create your digital twin from a single photo.",
+      "keywords": "AI avatars,Pixmind library,virtual presenter,avatar templates,custom avatar,avatar cloning"
+    },
+    "voice": {
+      "title": "AI Voice Cloning - High-Fidelity Voice Synthesis | Pixmind",
+      "description": "Advanced AI voice cloning technology, replicate voice characteristics with just 5 minutes of audio. Support 175+ languages for avatar dubbing, audiobooks, and customer service.",
+      "keywords": "voice cloning,AI dubbing,voice synthesis,TTS technology,voice replication,AI voice"
+    },
+    "pricing": {
+      "title": "Pixmind Video Pricing - Flexible Plans, Free Trial | Pixmind",
+      "description": "Transparent pricing for AI Pixmind videos. Free credits available, pay-as-you-go or subscription plans. Enterprise bulk customization with exclusive discounts, API support.",
+      "keywords": "Pixmind pricing,AI video cost,avatar plans,enterprise custom,API service"
+    },
+    "blog": {
+      "title": "Pixmind Case Studies & Tutorials - AI Video Guide | Pixmind",
+      "description": "Pixmind application cases, creation tutorials, and industry solutions. Covering education, e-commerce, corporate communication, and customer service AI.",
+      "keywords": "Pixmind cases,AI video tutorial,avatar applications,industry solutions,creation guide"
+    }
+  },
+  "landing": {
+    "hero": {
+      "badge": "Free AI Pixmind Generator",
+      "subtitle": "Avatar Cloning · Voice Cloning · 175+ Language TTS · 1-Minute Video Generation",
+      "description": "Professional AI Pixmind platform with 1000+ avatar library, 4K HD output support. No camera or actors needed, starting from $1",
+      "start_creating": "Start Creating",
+      "join_discord": "Join Discord",
+      "showcase_title": "Core Features Showcase",
+      "showcase_subtitle": "Experience the power of AI Pixmind technology",
+      "explore_more": "Explore More AI Features",
+      "video_showcases": {
+        "digital_anchor": {
+          "title": "AI Digital Anchor",
+          "description": "Realistic digital anchor supporting multilingual broadcasting",
+          "category": "Pixmind"
+        },
+        "avatar_clone": {
+          "title": "Avatar Clone Demo",
+          "description": "One-click real person cloning, create your exclusive digital avatar",
+          "category": "Clone"
+        },
+        "voice_clone": {
+          "title": "Voice Cloning Technology",
+          "description": "High-fidelity voice cloning, perfectly reproducing voice characteristics",
+          "category": "Voice"
+        },
+        "multilingual_tts": {
+          "title": "Multilingual TTS",
+          "description": "Supporting 175+ languages with intelligent voice synthesis",
+          "category": "TTS"
+        },
+        "image_clone": {
+          "title": "Image Clone Demo",
+          "description": "Create digital avatar from a single photo, quickly generate your exclusive digital double",
+          "category": "Image Clone"
+        }
+      }
+    }
+  },
+  "user": {
+    "sign_in": "Sign In",
+    "sign_out": "Sign Out",
+    "credits": "Credits",
+    "api_keys": "API Keys",
+    "my_orders": "My Orders",
+    "my_profile": "My Profile",
+    "user_center": "User Center",
+    "admin_system": "Admin System",
+    "anonymous": "Anonymous User",
+    "no_member": "No Membership",
+    "basic_member": "Basic Member",
+    "professional_member": "Professional Member",
+    "member": "Member",
+    "valid_until": "Valid Until",
+    "upgrade_membership": "Upgrade Membership",
+    "recharge_credits": "Recharge Credits",
+    "transaction_history": "Credit History",
+    "transaction_history_desc": "View your credit usage records",
+    "credit_history": "Credit History",
+    "member_orders": "Membership Orders",
+    "points_orders": "Points Orders",
+    "transaction_type": "Type",
+    "credits_change": "Credits Change",
+    "time": "Time",
+    "no_transactions": "No credit transactions"
+  },
+  "sign_modal": {
+    "sign_in_title": "Sign In",
+    "sign_in_description": "Sign in to your account",
+    "sign_up_title": "Sign Up",
+    "sign_up_description": "Create an account",
+    "email_title": "Email",
+    "email_placeholder": "Input your email here",
+    "phone_title": "Phone",
+    "phone_placeholder": "Enter your phone number",
+    "password_title": "Password",
+    "password_placeholder": "Input your password here",
+    "forgot_password": "Forgot password?",
+    "forgot_password_hint": "Enter your phone number and get verification code, then set a new password",
+    "password_login": "Password Login",
+    "sms_login": "SMS Login",
+    "social_login": "Social Login",
+    "phone_login": "Phone Login",
+    "social_login_desc": "Sign in quickly with your social account",
+    "phone_password_required": "Please enter phone number and password",
+    "invalid_phone": "Please enter a valid phone number",
+    "login_success": "Login successful",
+    "login_failed": "Login failed",
+    "network_error": "Network error, please try again",
+    "sign_in": "Sign In",
+    "or": "Or",
+    "continue": "Continue",
+    "no_account": "Don't have an account?",
+    "email_sign_in": "Sign in with Email",
+    "google_sign_in": "Sign in with Google",
+    "google_login_failed": "Google login failed",
+    "google_login_error": "Failed to initiate Google login",
+    "signing_in": "Signing in...",
+    "github_sign_in": "Sign in with GitHub",
+    "close_title": "Close",
+    "cancel_title": "Cancel",
+    "phone_required": "Please enter phone number",
+    "code_required": "Please enter verification code",
+    "code_sent": "Verification code sent",
+    "send_code_failed": "Failed to send verification code",
+    "code_title": "Verification Code",
+    "code_placeholder": "Enter verification code",
+    "get_code": "Get Code",
+    "resend": "Resend",
+    "sending": "Sending...",
+    "verify_code": "Verify",
+    "verifying": "Verifying...",
+    "verify_success": "Verification successful",
+    "verify_failed": "Verification failed",
+    "back": "Back",
+    "reset_password_title": "Reset Password",
+    "reset_password_phone_desc": "Enter your phone number to receive verification code",
+    "reset_password_verify_desc": "Enter the verification code you received",
+    "reset_password_new_desc": "Set your new password",
+    "new_password_title": "New Password",
+    "new_password_placeholder": "Enter new password (at least 6 characters)",
+    "confirm_password_title": "Confirm Password",
+    "confirm_password_placeholder": "Enter new password again",
+    "password_mismatch": "Passwords do not match",
+    "password_too_short": "Password must be at least 6 characters",
+    "reset_password": "Reset Password",
+    "resetting": "Resetting...",
+    "reset_password_success": "Password reset successful",
+    "reset_password_failed": "Password reset failed",
+    "password_reset_success_login": "Password reset successful, please login with your new password",
+    "captcha_fetch_failed": "Failed to fetch captcha",
+    "captcha_fetch_error": "Error fetching captcha",
+    "captcha_required": "Please enter captcha",
+    "captcha_invalid": "Invalid captcha",
+    "captcha_verify_error": "Captcha verification error",
+    "sms_sent": "SMS code sent",
+    "sms_send_failed": "Failed to send SMS code",
+    "sms_send_error": "Error sending SMS code",
+    "phone_sms_required": "Please enter phone number and SMS code",
+    "login_error": "Login error",
+    "logging_in": "Logging in...",
+    "login": "Login",
+    "captcha_title": "Captcha",
+    "captcha_placeholder": "Enter captcha",
+    "captcha_refresh": "Refresh captcha",
+    "captcha_click_to_get": "Click to get captcha",
+    "sms_code_title": "SMS Code",
+    "sms_code_placeholder": "Enter SMS code",
+    "get_sms_code": "Get SMS Code",
+    "sms_countdown": "{seconds}s",
+    "invite_code": "Invite Code",
+    "invite_code_placeholder": "Enter inviter user ID",
+    "invite_code_detected": "Invite code auto-filled",
+    "optional": "Optional",
+    "terms_agreement": "By clicking continue, you agree to our <terms>Terms of Service</terms> and <privacy>Privacy Policy</privacy>.",
+    "reset_step_1": "Verify Phone",
+    "reset_step_2": "Set New Password",
+    "reset_step_3": "Complete",
+    "reset_step_1_title": "Verify Phone Number",
+    "reset_step_2_title": "Set New Password",
+    "reset_success_title": "Password Reset Successfully!",
+    "reset_success_desc": "Your password has been successfully reset. Redirecting to login in 3 seconds",
+    "previous_step": "Previous",
+    "next_step": "Next",
+    "confirm_reset": "Confirm Reset",
+    "captcha_dialog_title": "Captcha Verification",
+    "captcha_dialog_desc": "Please enter the captcha to continue",
+    "captcha_hint": "Can't see clearly? Click image to refresh",
+    "confirm": "Confirm",
+    "password_required": "Please enter password"
+  },
+  "my_orders": {
+    "title": "My Orders",
+    "description": "orders paid with Pixmind.",
+    "no_orders": "No orders found",
+    "tip": "",
+    "activate_order": "Activate Order",
+    "actived": "Activated",
+    "join_discord": "Join Discord",
+    "read_docs": "Read Docs",
+    "table": {
+      "order_no": "Order No",
+      "email": "Email",
+      "product_name": "Product Name",
+      "amount": "Amount",
+      "paid_at": "Paid At",
+      "github_username": "GitHub Username",
+      "status": "Status"
+    },
+    "payment": {
+      "alipay": "Alipay",
+      "wechat": "WeChat Pay",
+      "stripe": "Credit Card",
+      "paypal": "PayPal",
+      "dialog_title": "Confirm Payment",
+      "plan_name": "Plan Name:",
+      "duration": "Duration:",
+      "order_amount": "Order Amount:",
+      "payment_method_label": "Payment Method",
+      "generating_qr": "Generating QR code...",
+      "scan_to_pay": "Scan with WeChat to pay",
+      "auto_redirect": "Will redirect automatically after payment",
+      "payment_failed": "Payment creation failed",
+      "retry_qr": "Retry QR Code",
+      "pay_now": "Pay Now",
+      "generating_payment": "Initiating payment...",
+      "redirect_to_alipay": "Click button to redirect to Alipay",
+      "tips_title": "Tips:",
+      "tips_credits": "• Credits will be added immediately after successful payment",
+      "tips_support": "• Contact support if you encounter any issues",
+      "alipay_title": "Alipay Payment",
+      "alipay_loading": "Loading payment page...",
+      "alipay_tip1": "• Please complete payment on Alipay page",
+      "alipay_tip2": "• This window will close automatically after payment",
+      "alipay_tip3": "• Monitoring payment status (checks every 2 seconds, max 100 seconds)",
+      "order_no": "Order No:",
+      "qr_code_failed": "Failed to get payment QR code",
+      "create_wechat_order_failed": "Failed to create WeChat payment order",
+      "network_error": "Network error, please try again later",
+      "create_alipay_order_failed": "Failed to create Alipay order",
+      "payment_timeout": "Payment timeout, please refresh the page to check payment status",
+      "payment_success": "Payment successful! Membership activated",
+      "payment_cancelled": "Payment cancelled"
+    }
+  },
+  "my_credits": {
+    "title": "My Credits",
+    "left_tip": "left credits: {left_credits}",
+    "no_credits": "No credits records",
+    "recharge": "Recharge",
+    "table": {
+      "trans_no": "Trans No",
+      "trans_type": "Trans Type",
+      "credits": "Credits",
+      "updated_at": "Updated At",
+      "status": "Status"
+    }
+  },
+  "credit_management": {
+    "title": "Credit History",
+    "subtitle": "Available Credits: {credits}",
+    "get_free_credits": "Get Free Credits",
+    "view_credit_info": "View Credit Info",
+    "tabs": {
+      "credit_history": "Credit History",
+      "member_orders": "Member Orders",
+      "points_orders": "Points Orders"
+    },
+    "credit_table": {
+      "trans_no": "Transaction No.",
+      "trans_type": "Transaction Type",
+      "credits": "Credits Change",
+      "created_at": "Transaction Time"
+    },
+    "member_table": {
+      "order_no": "Order No.",
+      "plan_name": "Plan Name",
+      "description": "Description",
+      "duration": "Duration",
+      "amount": "Amount",
+      "status": "Status",
+      "payment_method": "Payment Method",
+      "created_at": "Order Time",
+      "expired_at": "Expiry Date"
+    },
+    "points_table": {
+      "order_no": "Order No.",
+      "description": "Description",
+      "points": "Points",
+      "amount": "Amount",
+      "status": "Status",
+      "payment_method": "Payment Method",
+      "created_at": "Order Time"
+    },
+    "payment": {
+      "alipay": "Alipay",
+      "wechat": "WeChat Pay",
+      "stripe": "Credit Card",
+      "paypal": "PayPal",
+      "dialog_title": "Confirm Payment",
+      "plan_name": "Plan Name:",
+      "duration": "Duration:",
+      "order_amount": "Order Amount:",
+      "payment_method_label": "Payment Method",
+      "generating_qr": "Generating QR code...",
+      "scan_to_pay": "Scan with WeChat to pay",
+      "auto_redirect": "Will redirect automatically after payment",
+      "payment_failed": "Payment creation failed",
+      "retry_qr": "Retry QR Code",
+      "pay_now": "Pay Now",
+      "generating_payment": "Initiating payment...",
+      "redirect_to_alipay": "Click button to redirect to Alipay",
+      "tips_title": "Tips:",
+      "tips_credits": "• Credits will be added immediately after successful payment",
+      "tips_support": "• Contact support if you encounter any issues",
+      "alipay_title": "Alipay Payment",
+      "alipay_loading": "Loading payment page...",
+      "alipay_tip1": "• Please complete payment on Alipay page",
+      "alipay_tip2": "• This window will close automatically after payment",
+      "alipay_tip3": "• Monitoring payment status (checks every 2 seconds, max 100 seconds)",
+      "order_no": "Order No:",
+      "qr_code_failed": "Failed to get payment QR code",
+      "create_wechat_order_failed": "Failed to create WeChat payment order",
+      "network_error": "Network error, please try again later",
+      "create_alipay_order_failed": "Failed to create Alipay order",
+      "payment_timeout": "Payment timeout, please refresh the page to check payment status",
+      "payment_success": "Payment successful! Membership activated",
+      "payment_cancelled": "Payment cancelled"
+    },
+    "status": {
+      "created": "Pending",
+      "paid": "Paid",
+      "cancelled": "Cancelled",
+      "refunded": "Refunded",
+      "pending": "Pending",
+      "failed": "Failed"
+    },
+    "no_credit_history": "No credit history",
+    "no_member_orders": "No member orders",
+    "no_points_orders": "No points orders"
+  },
+  "api_keys": {
+    "title": "API Keys",
+    "tip": "Please keep your apikey safe to avoid leaks",
+    "no_api_keys": "No API Keys",
+    "create_api_key": "Create API Key",
+    "table": {
+      "name": "Name",
+      "key": "Key",
+      "created_at": "Created At"
+    },
+    "form": {
+      "name": "Name",
+      "name_placeholder": "API Key Name",
+      "submit": "Submit"
+    }
+  },
+  "blog": {
+    "title": "Blog & Tutorials",
+    "description": "News, resources, and updates about Pixmind",
+    "read_more_text": "Read More",
+    "subtitle": "Learn about AI image prompts, tips, and best practices",
+    "category_tutorial": "Tutorial",
+    "read_more": "Read More",
+    "more_coming": "More articles coming soon...",
+    "article_what_is_prompt_title": "What is an Image Prompt?",
+    "article_what_is_prompt_desc": "A comprehensive guide to understanding and creating effective image prompts for AI image generation",
+    "whatIsImagePrompt": {
+      "backToHome": "Back to Home",
+      "title": "What is an Image Prompt?",
+      "subtitle": "A comprehensive guide to understanding and creating effective image prompts for AI image generation",
+      "introduction": {
+        "title": "Introduction",
+        "content": "An image prompt is a text description used to guide AI image generation models in creating visual content. It serves as instructions that tell the AI what kind of image you want to create, including details about the subject, style, composition, lighting, colors, and mood."
+      },
+      "understanding": {
+        "title": "Understanding Image Prompts",
+        "paragraph1": "Image prompts are the bridge between human creativity and AI capabilities. When you provide a prompt to an AI image generator like Midjourney, DALL-E, Stable Diffusion, or Flux, the model interprets your text and generates corresponding visual content.",
+        "paragraph2": "The quality and specificity of your prompt directly impact the quality of the generated image. A well-crafted prompt can produce stunning, precise results, while a vague or poorly structured prompt may lead to unexpected or unsatisfactory outcomes."
+      },
+      "components": {
+        "title": "Key Components of an Image Prompt",
+        "subject": {
+          "title": "1. Subject Description",
+          "description": "The main focus of your image. Be specific about what you want to see: \"a golden retriever puppy\" is more effective than just \"a dog.\""
+        },
+        "style": {
+          "title": "2. Style and Aesthetic",
+          "description": "Describe the artistic style: photorealistic, oil painting, digital art, anime style, watercolor, minimalist, vintage, cyberpunk, etc."
+        },
+        "composition": {
+          "title": "3. Composition and Framing",
+          "description": "Specify the perspective and framing: close-up, wide angle, aerial view, portrait orientation, rule of thirds, centered composition, etc."
+        },
+        "lighting": {
+          "title": "4. Lighting and Atmosphere",
+          "description": "Define the mood and lighting: golden hour lighting, dramatic shadows, soft natural light, neon glow, misty atmosphere, etc."
+        },
+        "colors": {
+          "title": "5. Colors and Palette",
+          "description": "Specify color schemes: vibrant colors, pastel tones, monochromatic, warm color palette, cool blues and greens, high contrast, etc."
+        },
+        "details": {
+          "title": "6. Details and Quality",
+          "description": "Add quality modifiers: highly detailed, 4K resolution, ultra-realistic, intricate details, sharp focus, professional photography, etc."
+        }
+      },
+      "examples": {
+        "title": "Example Prompts",
+        "basic": {
+          "label": "Basic Prompt:",
+          "prompt": "A cat sitting on a windowsill"
+        },
+        "enhanced": {
+          "label": "Enhanced Prompt:",
+          "prompt": "A fluffy orange tabby cat sitting on a wooden windowsill, looking out at a rainy street, soft natural lighting from the window, cozy atmosphere, photorealistic style, shallow depth of field, 4K quality"
+        },
+        "advanced": {
+          "label": "Advanced Prompt:",
+          "prompt": "A majestic fluffy orange tabby cat with bright green eyes sitting elegantly on a vintage wooden windowsill, gazing contemplatively at rain-soaked cobblestone streets below, golden hour lighting filtering through raindrops on the glass, warm and melancholic atmosphere, bokeh effect in background, shot with 85mm lens, photorealistic, highly detailed fur texture, professional photography, 8K resolution"
+        }
+      },
+      "bestPractices": {
+        "title": "Best Practices for Writing Image Prompts",
+        "tip1": "<strong>Be specific and descriptive:</strong> More details generally lead to better results",
+        "tip2": "<strong>Use clear language:</strong> Avoid ambiguous terms or contradictory descriptions",
+        "tip3": "<strong>Order matters:</strong> Place the most important elements at the beginning of your prompt",
+        "tip4": "<strong>Use style references:</strong> Mention artists, art movements, or specific styles when relevant",
+        "tip5": "<strong>Experiment and iterate:</strong> Try different variations to achieve your desired result",
+        "tip6": "<strong>Learn from examples:</strong> Study successful prompts and understand what makes them effective"
+      },
+      "conclusion": {
+        "title": "Conclusion",
+        "paragraph1": "Understanding image prompts is essential for anyone working with AI image generation tools. A well-crafted prompt is the key to unlocking the full potential of these powerful AI models.",
+        "paragraph2": "Whether you're a digital artist, content creator, marketer, or hobbyist, mastering the art of prompt writing will significantly improve your results and help you bring your creative visions to life."
+      },
+      "cta": {
+        "title": "Ready to Create Better Image Prompts?",
+        "description": "Try our AI-powered tools to generate and enhance your image prompts",
+        "button1": "Image to Prompt",
+        "button2": "Text to Prompt"
+      }
+    }
+  },
+  "my_invites": {
+    "title": "My Invites",
+    "description": "View your invite records",
+    "no_invites": "No invite records found",
+    "my_invite_link": "My Invite Link",
+    "edit_invite_link": "Edit Invite Link",
+    "copy_invite_link": "Copy Invite Link",
+    "invite_code": "Invite Code",
+    "invite_tip": "Invite 1 friend to buy Pixmind credits, reward $50.",
+    "invite_balance": "Invite Reward Balance",
+    "total_invite_count": "Total Invite Count",
+    "total_paid_count": "Total Paid Count",
+    "total_award_amount": "Total Award Amount",
+    "update_invite_code": "Set Invite Code",
+    "update_invite_code_tip": "Input your custom invite code",
+    "update_invite_button": "Save",
+    "no_orders": "You can't invite others before you bought Pixmind credits",
+    "no_affiliates": "You're not allowed to invite others, please contact us to apply for permission.",
+    "table": {
+      "invite_time": "Invite Time",
+      "invite_user": "Invite User",
+      "status": "Status",
+      "reward_percent": "Reward Percent",
+      "reward_amount": "Reward Amount",
+      "pending": "Pending",
+      "completed": "Completed"
+    }
+  },
+  "feedback": {
+    "title": "Feedback",
+    "description": "We'd love to hear what went well or how we can improve the product experience.",
+    "submit": "Submit",
+    "loading": "Submitting...",
+    "contact_tip": "Other ways to contact us",
+    "rating_tip": "How do you feel about Pixmind?",
+    "placeholder": "Leave your words here..."
+  },
+  "ai_image": {
+    "menu_title": "AI Image",
+    "txt_to_image": {
+      "title": "Text to Image",
+      "description": "Generate AI images from text descriptions"
+    },
+    "image_to_image": {
+      "title": "Image to Image",
+      "description": "Generate new AI images from reference images",
+      "reference_image": "Reference Image",
+      "reference_image_desc": "Upload an image to use as a reference for generation",
+      "upload_or_drag": "Click to upload or drag and drop",
+      "prompt_title": "Prompt",
+      "prompt_desc": "Only English prompts are supported now",
+      "prompt_placeholder": "Describe how you want to transform the image...",
+      "translate": "Translate",
+      "select_ratio": "Select ratio"
+    },
+    "login_to_get_credits": "Login to get free credits and use more features",
+    "generating": "Generating...",
+    "generate_image": "Generate Image",
+    "login_success": "Login successful!",
+    "please_login": "Please login first to use this feature",
+    "login_expired": "Login expired, please login again",
+    "enter_prompt": "Please enter a prompt",
+    "generation_success": "Image generated successfully!",
+    "generation_failed": "Generation failed, please try again",
+    "generation_error": "Generation failed, please try again later",
+    "upload_reference_image": "Please upload a reference image",
+    "loading": "Loading...",
+    "no_models_available": "No models available",
+    "select_model": "Select Model",
+    "model_comparison": {
+      "title": "Model Comparison and Examples",
+      "subtitle": "Discover the difference of Image models",
+      "features": "Features",
+      "image_quality": "Image Quality",
+      "photo_realistic_example": "Photo-realistic Example",
+      "text_rendering_example": "Text Rendering Example",
+      "processing_speed": "Processing Speed",
+      "realistic_humans": "Realistic Humans",
+      "text_rendering": "Text Rendering",
+      "applicable_scenarios": "Applicable Scenarios",
+      "seedream_4": {
+        "image_quality": "SOTA-level multimodal image creation model based on leading architecture, with world-class aesthetics, instruction following, structural integrity, and subject consistency",
+        "processing_speed": "SOTA-level multimodal model with longer processing time, prioritizing generation quality",
+        "realistic_humans": "World-class level, strong subject consistency",
+        "text_rendering": "Excellent, accurate instruction following",
+        "scenarios": "Commercial applications, advertising design, high-quality content creation requiring the highest quality"
+      },
+      "seedream_3": {
+        "image_quality": "Native high-resolution bilingual (Chinese-English) image generation model, supports native 2K resolution output, fast response speed, accurate small text generation",
+        "processing_speed": "Fast response speed, supports rapid high-resolution generation",
+        "realistic_humans": "Excellent, high structural integrity",
+        "text_rendering": "Outstanding, native 2K resolution, accurate small text generation",
+        "scenarios": "Rapid prototyping, bilingual content generation, high-resolution image creation"
+      },
+      "seededit_3": {
+        "image_quality": "Image editing model that enables text-based image editing, excels in portrait editing, background changing, perspective and lighting transformation",
+        "processing_speed": "Moderate image editing speed, focusing on editing effects",
+        "realistic_humans": "Excellent, outstanding professional portrait editing capabilities",
+        "text_rendering": "Good, focusing on image editing",
+        "scenarios": "Portrait editing, background changing, perspective adjustment, lighting transformation and other image editing scenarios"
+      }
+    },
+    "title_google": "Google Imagen 4 AI Image Generator",
+    "subtitle_google": "Powered by Google's latest Imagen 4 models - Standard, Ultra, and Fast for photorealistic and creative image generation",
+    "title_nano_banana": "Nano Banana - Gemini 2.5 Flash Image Editor",
+    "subtitle_nano_banana": "Google's state-of-the-art image generation and editing model with multi-image fusion, character consistency, and conversational editing",
+    "title_doubao": "Doubao Seedream AI Image Generator",
+    "subtitle_doubao": "Experience the power of ByteDance's Seedream models for stunning text and image rendering",
+    "title_default": "AI Image Generator",
+    "subtitle_default": "Transform your image prompt into stunning visuals with AI-powered generation",
+    "prompt_label": "Prompt",
+    "prompt_description": "You can input image prompt in any language, but English prompts generate the most accurate images.",
+    "prompt_link": "How to Write Effective Image Prompt?",
+    "prompt_placeholder": "Enter your idea here in natural language",
+    "ai_magic_enhance": "AI Magic Enhance",
+    "translate": "Translate",
+    "aspect_ratio_square": "1:1 (Square)",
+    "aspect_ratio_landscape_16_9": "16:9 (Landscape)",
+    "aspect_ratio_portrait_9_16": "9:16 (Portrait)",
+    "aspect_ratio_4_3": "4:3",
+    "aspect_ratio_3_4": "3:4",
+    "generating_image": "Generating your image...",
+    "image_placeholder": "Generated image will show here",
+    "reference_image": "Reference Image",
+    "upload_image": "Upload Image",
+    "remove_image": "Remove",
+    "how_to_use": "How to Use AI Image Generator",
+    "step_1": "Enter the image prompt to describe the image you want to generate",
+    "step_2": "Choose your preferred image model and size",
+    "step_3": "Click the \"Generate Image\" button",
+    "step_4": "Wait a few seconds for your image to be generated",
+    "step_5": "Download or further edit the generated image",
+    "faq_title": "Frequently asked questions",
+    "faq_subtitle": "Do you have any questions? We have got you covered",
+    "generated_image_placeholder": "Generated image will show here",
+    "how_to_use_t2i": {
+      "title": "How to Use AI Image Generator",
+      "step1": "Enter the image prompt to describe the image you want to generate",
+      "step2": "Choose your preferred image model and size",
+      "step3": "Click the \"Generate Image\" button",
+      "step4": "Wait a few seconds for your image to be generated",
+      "step5": "Download or further edit the generated image"
+    },
+    "how_to_use_i2i": {
+      "title": "How to Use Image to Image Generator",
+      "step1": "Upload your image you want to use as a reference",
+      "step2": "Enter a prompt describing how you want to generate a new image based on the reference image",
+      "step3": "Click the \"Generate Image\" button and wait a few seconds",
+      "step4": "Download or further edit your generated image"
+    },
+    "showcase": {
+      "title": "See Nano Banana in Action",
+      "description": "Drag the slider to reveal stunning AI-powered transformations",
+      "example1": {
+        "before": "Original living room",
+        "after": "Deep navy blue sofa",
+        "description": "Change the sofa color to deep navy blue"
+      },
+      "example2": {
+        "before": "Original motorcycle photo",
+        "after": "Architectural drawing style",
+        "description": "Apply the style of an architectural drawing"
+      },
+      "example3": {
+        "before": "Model posing with items",
+        "after": "Final composed scene",
+        "description": "A model is posing and wearing the following items, she is standing against a dark grey background. The green alien is a keychain and it's attached to the pink handbag. There is a pug sitting next to her"
+      }
+    },
+    "i2i_showcase": {
+      "title": "Discover the power of our Image to Image Generator",
+      "subtitle": "Transform your images with AI-powered editing and style transfer"
+    },
+    "faq": {
+      "title": "About Nano Banana",
+      "subtitle": "Google's state-of-the-art image generation and editing model",
+      "q1": "What is Nano Banana?",
+      "a1": "Nano Banana is the nickname for Gemini 2.5 Flash Image, Google's advanced AI image generation and editing model launched in August 2025. It enables users to generate or edit images directly from text prompts or images, with exceptional capabilities in character consistency and natural language editing.",
+      "q2": "What are Nano Banana's key features?",
+      "a2": "Nano Banana excels in character consistency for storytelling, multi-image blending, one-shot editing with natural language commands, and scene integration. It can maintain facial features and seamlessly blend edits with backgrounds, making it ideal for creating consistent AI content and product photography.",
+      "q3": "How does Nano Banana compare to other models?",
+      "a3": "Nano Banana stands out for its superior character consistency and scene blending capabilities. Users report it significantly outperforms competing models in preserving facial features and integrating edits naturally with backgrounds, making it the top choice for professional content creation.",
+      "q4": "What are the best use cases for Nano Banana?",
+      "a4": "Nano Banana is perfect for creating consistent AI influencers, UGC content, social media campaigns, marketing materials, and product photography. Its ability to maintain character consistency across multiple images makes it invaluable for rich storytelling and brand content.",
+      "q5": "How do I access Nano Banana?",
+      "a5": "Nano Banana (Gemini 2.5 Flash Image) is available through the Gemini API, Google AI Studio for developers, and Vertex AI for enterprise users. You can also use it directly at gemini.google.com by uploading photos and using natural language editing commands."
+    },
+    "prompt_guide": {
+      "title": "Google Imagen Prompt Writing Guide",
+      "subtitle": "Master the art of creating effective prompts to generate stunning AI images",
+      "core_structure_title": "Core Prompt Structure",
+      "subject_title": "Subject",
+      "subject_desc": "Define the main object, character, or scene you want to create",
+      "subject_example": "Example: \"A majestic lion\"",
+      "background_title": "Background/Environment",
+      "background_desc": "Set the context and surroundings for your subject",
+      "background_example": "Example: \"in an African savanna at sunset\"",
+      "style_title": "Style",
+      "style_desc": "Specify the artistic approach and visual aesthetic",
+      "style_example": "Example: \"photorealistic, golden hour lighting\"",
+      "progression_title": "Prompt Progression Example",
+      "basic_label": "Basic:",
+      "basic_example": "A park in the spring next to a lake",
+      "enhanced_label": "Enhanced:",
+      "enhanced_example": "A park in the spring next to a lake, the sun sets across the lake, golden hour",
+      "detailed_label": "Detailed:",
+      "detailed_example": "A park in the spring next to a lake, the sun sets across the lake, golden hour, red wildflowers, soft focus, 35mm lens",
+      "photography_title": "Photography Modifiers",
+      "art_styles_title": "Art Styles & Quality",
+      "creative_techniques_title": "Creative Techniques",
+      "aspect_ratio_title": "Aspect Ratio Guide",
+      "pro_tips_title": "Pro Tips for Better Results",
+      "gallery_title": "Google Imagen Example Gallery",
+      "gallery_subtitle": "Explore possibilities through these prompt examples",
+      "photorealism_title": "Photorealistic Professional Techniques",
+      "photorealism_subtitle": "Master professional photography techniques for ultra-realistic results"
+    }
+  },
+  "order": {
+    "order_no": "Order No.",
+    "description": "Description",
+    "duration": "Duration",
+    "amount": "Amount",
+    "status": "Status",
+    "created_at": "Created At",
+    "no_member_orders": "No membership orders",
+    "no_points_orders": "No points orders",
+    "points": "Points",
+    "status_created": "Pending",
+    "status_paid": "Paid",
+    "status_cancelled": "Cancelled",
+    "status_pending": "Pending",
+    "status_failed": "Failed",
+    "default_points_recharge": "Points Recharge"
+  },
+  "video-generate": {
+    "default": {
+      "title": "AI Video Generator",
+      "subtitle": "Transform your text or images into stunning videos with AI"
+    },
+    "veo": {
+      "title": "Google Veo 3.1",
+      "titleSuffix": "Video Generation",
+      "subtitle": "State-of-the-art video generation with native audio synthesis and enhanced editing capabilities",
+      "description": "",
+      "features": {
+        "physics": {
+          "title": "Advanced Physics Understanding and Realistic Motion",
+          "titleBold1": "Real-World Physics",
+          "titleBold2": "Human Movement",
+          "description": "Veo 3.1 brings state-of-the-art understanding of real-world physics and the nuances of human movement and expression. Generate highly realistic videos with natural motion, accurate lighting, believable interactions, and lifelike character animations that capture the complexity of the real world.",
+          "physics_title": "Real-World Physics",
+          "physics_desc": "Accurate simulation of gravity, momentum, fluid dynamics, and material interactions",
+          "human_motion_title": "Human Movement",
+          "human_motion_desc": "Natural body language, facial expressions, and realistic character animations"
+        },
+        "audio": {
+          "title": "Native Audio Generation with Synchronized Sound Effects",
+          "titleBold": "Audio Generation",
+          "description": "Veo 3.1 natively generates audio including sound effects, ambient noise, and even dialogue - all synchronized with the video content. Create immersive experiences with realistic soundscapes that perfectly match your visual content, eliminating the need for separate audio production.",
+          "sound_effects_title": "Sound Effects",
+          "sound_effects_desc": "Realistic sound effects synchronized with visual actions - footsteps, doors, nature sounds, and more",
+          "ambient_noise_title": "Ambient Noise",
+          "ambient_noise_desc": "Immersive background ambience - wind, rain, city sounds, ocean waves perfectly matched to scenes",
+          "dialogue_title": "Dialogue",
+          "dialogue_desc": "Natural dialogue and voice generation perfectly lip-synced with character movements"
+        },
+        "editing": {
+          "title": "Professional Video Editing and Creative Control",
+          "titleBold1": "Flow Integration",
+          "titleBold2": "Editing Tools",
+          "titleBold3": "Cinematic Control",
+          "description": "Veo 3.1 integrates with Flow for advanced video editing capabilities. Specify camera angles like 'low-angle tracking shot', lens types like '18mm wide-angle', or effects like 'shallow depth of field'. Edit and refine your AI-generated clips with professional-grade tools for complete creative control.",
+          "flow_integration_title": "Flow Integration",
+          "flow_integration_desc": "Seamless integration with Google's Flow for advanced video editing and refinement",
+          "editing_tools_title": "Editing Tools",
+          "editing_tools_desc": "Professional-grade editing tools to trim, adjust, and enhance your AI-generated videos",
+          "cinematic_control_title": "Cinematic Control",
+          "cinematic_control_desc": "Precise control over camera angles, lens types, depth of field, and cinematic effects"
+        }
+      },
+      "faq": {
+        "title": "Frequently Asked Questions about Google Veo 3.1",
+        "subtitle": "Everything you need to know about the most advanced video generation AI",
+        "q1": {
+          "question": "What is Google Veo 3.1 and what makes it special?",
+          "answer": "Google's Veo 3.1 is the latest and most advanced video generation AI model that offers native text-to-video, image-to-video, and audio generation capabilities. It creates professional videos with realistic physics, cinematic control, and synchronized sound effects, setting a new standard for AI video generation."
+        },
+        "q2": {
+          "question": "Does Veo 3.1 generate audio along with video?",
+          "answer": "Yes! One of Veo 3.1's standout features is native audio generation. It automatically creates synchronized sound effects, ambient noise, and even dialogue that perfectly matches the visual content, eliminating the need for separate audio production."
+        },
+        "q3": {
+          "question": "How does Veo 3.1 handle physics and human movement?",
+          "answer": "Veo 3.1 brings state-of-the-art understanding of real-world physics including gravity, momentum, and fluid dynamics. It excels at generating natural human movements with realistic body language, facial expressions, and character animations that capture the complexity of real-world motion."
+        },
+        "q4": {
+          "question": "Can I control camera angles and cinematic effects?",
+          "answer": "Absolutely! Veo 3.1 offers professional-level creative control. You can specify camera angles like 'low-angle tracking shot', lens types such as '18mm wide-angle', or effects like 'shallow depth of field'. The model integrates with Google's Flow for advanced video editing capabilities."
+        },
+        "q5": {
+          "question": "What video resolutions and formats does Veo 3.1 support?",
+          "answer": "Veo 3.1 supports multiple resolutions including 480p, 720p, and 1080p, with various aspect ratios (16:9, 9:16, 1:1) and duration options. The model automatically optimizes output quality based on your selected parameters to deliver the best possible results."
+        }
+      }
+    },
+    "seedance": {
+      "title": "Doubao Seedance",
+      "titleSuffix": "Video Generation",
+      "subtitle": "The ultimate model with rock-bottom pricing and peak performance, achieving an excellent balance between video quality, speed, and cost",
+      "description": "",
+      "features": {
+        "instruction": {
+          "title": "Deep Instruction Analysis and Execution for More Controllable Video Generation",
+          "titleBold1": "Instruction",
+          "titleBold2": "Controllable",
+          "description": "Deep semantic understanding to extract action intent, character relationships, and scene changes; intelligently infer temporal logic and causal relationships from reference images, automatically completing reasonable shots and plot development. Ensuring the rationality and narrative integrity of video generation, achieving 'what you think is what you get'."
+        },
+        "multiShot": {
+          "title": "Seamless Multi-shot Narration for Cinematic Creation Experience",
+          "titleBold": "Multi-shot Narration,",
+          "description": "The model intelligently plans combinations of long shots, close-ups, and other camera angles, with smooth multi-shot transitions and well-paced narrative rhythm. In complex interactive scenes, the model automatically adjusts camera focus to achieve coherence between character actions and perspective transitions, making creative expression more professional."
+        },
+        "detail": {
+          "title": "Realistic Detail Expression with Consistent Style and Enhanced Quality",
+          "titleBold1": "Detail Expression",
+          "titleBold2": "Style Consistency",
+          "titleBold3": "Quality",
+          "description": "Building on the detail richness and material realism of Seedance 1.0 pro, the Seedance 1.0 pro fast model further enhances detail expression in facial features, hair texture, and more, making the visuals more vivid and natural. Additionally, the model faithfully preserves the unique style of reference images with stable quality output."
+        }
+      },
+      "faq": {
+        "title": "Frequently Asked Questions about Seedance",
+        "subtitle": "Everything you need to know about the Doubao Seedance video generation model",
+        "q1": {
+          "question": "What makes Seedance different from other video generation models?",
+          "answer": "Seedance inherits the core advantages of Seedance 1.0 Pro while offering up to 3x faster generation speed with highly competitive pricing. It achieves an excellent balance between video quality, speed, and cost, making professional video generation accessible to everyone."
+        },
+        "q2": {
+          "question": "What video resolutions and durations does Seedance support?",
+          "answer": "Seedance supports multiple resolutions including 480p, 720p, and 1080p, with flexible duration options from 5 to 12 seconds. The model automatically optimizes output based on your selected aspect ratio (16:9, 9:16, or 1:1) for best results."
+        },
+        "q3": {
+          "question": "How does Seedance handle complex prompts and multi-shot narratives?",
+          "answer": "Seedance features deep semantic understanding to extract action intent, character relationships, and scene changes from your prompts. It intelligently plans combinations of long shots, close-ups, and other camera angles with smooth transitions, creating professional cinematic experiences."
+        },
+        "q4": {
+          "question": "Can I use reference images with Seedance?",
+          "answer": "Yes! Seedance supports both text-to-video and image-to-video generation. When using reference images, the model faithfully preserves the unique style and details of your input while adding natural motion and animation."
+        },
+        "q5": {
+          "question": "Why doesn't Seedance support audio generation?",
+          "answer": "Seedance focuses on delivering exceptional visual quality and generation speed at an affordable price point. While it doesn't generate audio, the model excels in visual storytelling, detail preservation, and motion consistency. You can easily add audio in post-production using your preferred editing tools."
+        }
+      }
+    },
+    "tabs": {
+      "textToVideo": "Text to Video",
+      "imageToVideo": "Image to Video"
+    },
+    "textToVideo": {
+      "title": "Video Prompt",
+      "description": "Describe the video you want to create",
+      "placeholder": "e.g., A serene sunset over mountains with gentle camera pan...",
+      "model": "Model",
+      "aspectRatio": "Aspect Ratio",
+      "duration": "Duration",
+      "resolution": "Resolution",
+      "enableAudio": "Enable Audio",
+      "enableAudioHint": "Add audio to the generated video",
+      "generateButton": "Generate Video",
+      "generating": "Generating...",
+      "resultPlaceholder": "Generated video will show here"
+    },
+    "imageToVideo": {
+      "referenceImage": "Reference Image",
+      "referenceDescription": "Upload an image as the starting frame for your video",
+      "uploadPrompt": "Click to upload or drag and drop",
+      "uploadHint": "PNG, JPG up to 10MB",
+      "uploading": "Uploading...",
+      "title": "Video Prompt",
+      "description": "Describe the motion and scene you want in the video",
+      "placeholder": "e.g., Slowly zoom in with gentle breeze effect...",
+      "model": "Model",
+      "aspectRatio": "Aspect Ratio",
+      "duration": "Duration",
+      "resolution": "Resolution",
+      "enableAudio": "Enable Audio",
+      "enableAudioHint": "Add audio to the generated video",
+      "generateButton": "Generate Video",
+      "generating": "Generating...",
+      "resultPlaceholder": "Generated video will show here"
+    },
+    "howToUse": {
+      "title": "How to Use AI Video Generator",
+      "step1": "Enter video prompt or upload image",
+      "step2": "Describe the motion you want",
+      "step3": "Choose model and duration",
+      "step4": "Wait 2-5 minutes for generation"
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "subtitle": "Do you have any questions? We have got you covered",
+      "q1": {
+        "question": "What is AI Video Generator?",
+        "answer": "AI Video Generator creates dynamic videos from text descriptions or static images using advanced AI models."
+      },
+      "q2": {
+        "question": "What's the difference between Text to Video and Image to Video?",
+        "answer": "Text to Video creates videos purely from text descriptions, while Image to Video uses an uploaded image as the starting frame and animates it based on your prompt."
+      },
+      "q3": {
+        "question": "How long does it take?",
+        "answer": "Video generation typically takes 2-5 minutes depending on duration and complexity. You can monitor progress in real-time."
+      },
+      "q4": {
+        "question": "What video lengths are supported?",
+        "answer": "You can generate videos from 3 to 15 seconds depending on the model. Different models have different capabilities."
+      }
+    },
+    "common": {
+      "seconds": "seconds",
+      "openFullSize": "Open Full Size",
+      "download": "Download",
+      "generatingMessage": "Generating your video...",
+      "generatingHint": "This may take 2-5 minutes",
+      "loading": "Loading...",
+      "selectModel": "Select Model"
+    },
+    "toast": {
+      "taskCreated": "Task created, generating video...",
+      "taskCreateFailed": "Failed to create task",
+      "generateFailed": "Generation failed, please try again later",
+      "videoGenerateSuccess": "Video generated successfully!",
+      "videoGenerateFailed": "Video generation failed",
+      "generateTimeout": "Generation timeout, please check history later",
+      "unknownTaskStatus": "Unknown task status",
+      "queryStatusFailed": "Failed to query task status",
+      "pleaseLogin": "Please log in first to use this feature",
+      "pleaseInputPrompt": "Please enter video prompt",
+      "pleaseUploadImage": "Please upload reference image",
+      "imageUploadSuccess": "Image uploaded successfully!",
+      "imageUploadFailed": "Image upload failed",
+      "pleaseUploadImageFile": "Please upload an image file",
+      "imageTooLarge": "Image size cannot exceed 10MB",
+      "getModelsFailed": "Failed to get model list",
+      "getModelsFailedRetry": "Failed to get model list, please refresh and try again"
+    }
+  },
+  "imageToPrompt": {
+    "title": "Free Image to Prompt Generator",
+    "subtitle": "Convert Image to Prompt to generate your own image",
+    "tabs": {
+      "imageToPrompt": "Image to Prompt",
+      "textToPrompt": "Text to Prompt"
+    },
+    "upload": {
+      "uploadImage": "Upload Image",
+      "inputImageUrl": "Input Image URL",
+      "dragDrop": "Upload a photo or drag and drop",
+      "fileFormat": "PNG, JPG, or WEBP up to 4MB",
+      "enterUrl": "Enter Image URL",
+      "urlPlaceholder": "https://example.com/image.jpg",
+      "loadUrl": "Load Image URL"
+    },
+    "preview": {
+      "title": "Image Preview",
+      "placeholder": "Your image will show here"
+    },
+    "models": {
+      "selectTitle": "Select AI Model",
+      "generalTitle": "General Image Prompt",
+      "generalDesc": "Natural language description of the image",
+      "fluxTitle": "Flux",
+      "fluxDesc": "Optimized for state-of-the-art Flux AI models",
+      "midjourneyTitle": "Midjourney",
+      "midjourneyDesc": "Tailored for Midjourney generation",
+      "stableDiffusionTitle": "Stable Diffusion",
+      "stableDiffusionDesc": "Formatted for Stable Diffusion models",
+      "promptLanguage": "Prompt Language",
+      "languageHint": "English prompt is the best choice for most AI image generators. You can generate non-English prompts for better understanding and editing and then translate them to English before using."
+    },
+    "generate": {
+      "button": "Generate Prompt",
+      "generating": "Generating...",
+      "viewHistory": "View History"
+    },
+    "result": {
+      "placeholder": "Generated prompt will appear here",
+      "copy": "Copy"
+    },
+    "toast": {
+      "fileTooLarge": "File too large. Please upload an image smaller than 5MB",
+      "invalidFileType": "Invalid file type. Please drop an image file",
+      "invalidUrl": "Please enter a valid image URL",
+      "imageLoaded": "Image loaded successfully!",
+      "corsWarning": "Image loaded for preview. If generation fails, try uploading the image directly.",
+      "invalidImageUrl": "Invalid image URL or failed to load image",
+      "noImageSelected": "No image selected. Please upload an image or enter an image URL first",
+      "promptGenerated": "Prompt generated successfully!",
+      "promptCopied": "Prompt copied to clipboard"
+    },
+    "cta": {
+      "text": "Want to enhance text prompts?",
+      "link": "Try Text to Prompt"
+    },
+    "bottom": {
+      "title": "Highly Accurate Image to Prompt Generation",
+      "description": "Convert original images to prompts and regenerated with AI to see our prompt accuracy"
+    }
+  },
+  "textToPrompt": {
+    "title": "Free Text to Prompt Generator",
+    "subtitle": "Transform simple text into detailed AI image prompts",
+    "tab_image_to_prompt": "Image to Prompt",
+    "tab_text_to_prompt": "Text to Prompt",
+    "prompt_label": "Prompt",
+    "prompt_placeholder": "Enter your idea here in simple text...",
+    "placeholder": "Enter your idea here in simple text...",
+    "tips_label": "Tips:",
+    "tips_title": "Tips:",
+    "tip1": "Start with a simple idea or description",
+    "tip2": "Use Magic Enhance to add details automatically",
+    "tip3": "Use Edit with AI to refine specific aspects",
+    "tip4": "Translate to your preferred language for easier editing",
+    "tip_1": "• Start with a simple idea or description",
+    "tip_2": "• Use Magic Enhance to add details automatically",
+    "tip_3": "• Use Edit with AI to refine specific aspects",
+    "tip_4": "• Translate to your preferred language for easier editing",
+    "magic_enhance": "Magic Enhance",
+    "processing": "Processing...",
+    "result_label": "Result",
+    "copy": "Copy",
+    "result_placeholder": "Enhanced prompt will appear here",
+    "result_hint": "Click Magic Enhance to start",
+    "click_button_start": "Click a button above to start",
+    "clear": "Clear",
+    "generate_image": "Generate Image",
+    "example_original": "original",
+    "example_input": "a cat on a mountain",
+    "example_after_enhance": "after Magic Enhance",
+    "example_output": "A majestic long-haired gray tabby cat standing on a rugged mountain peak, golden sunset sky in background, soft warm light illuminating its fur, wide-angle shot capturing the grand scenery, dramatic composition, professional landscape photography, high resolution",
+    "how_to_use_title": "How to Use Text Prompt Generator",
+    "how_to_use_subtitle": "Transform your simple ideas into detailed, professional AI image prompts with our powerful tools",
+    "magic_enhance_title": "Magic Enhance",
+    "magic_enhance_desc": "Transform simple text into detailed, descriptive image prompt",
+    "original_prompt": "original prompt",
+    "after_enhance": "after Magic Enhance",
+    "step_prefix": "Step",
+    "step1": "Enter your idea in simple text in Text Prompt Generator",
+    "step2": "Click the \"Magic Enhance\" button and wait a few seconds",
+    "step3": "Review the generated image prompt",
+    "step4": "Use your new image prompt or further edit it if needed",
+    "step_1_enhance": "Enter your idea in simple text in Text Prompt Generator",
+    "step_2_enhance": "Click the \"Magic Enhance\" button and wait a few seconds",
+    "step_3_enhance": "Review the generated image prompt",
+    "step_4_enhance": "Use your new image prompt or further edit it if needed",
+    "edit_with_ai": "Edit with AI",
+    "edit_with_ai_desc": "Refine and modify prompts using natural language instructions by AI",
+    "edit_ai_title": "Edit with AI",
+    "edit_ai_desc": "Refine and modify prompts using natural language instructions by AI",
+    "edit_example_input": "a modern cityscape at sunset, vibrant colors, professional photography",
+    "edit_instructions_label": "Edit Instructions",
+    "edit_example_instruction": "add futuristic elements and neon lights",
+    "edit_example_after": "after Edit with AI",
+    "edit_example_output": "a modern futuristic cityscape at sunset, vibrant neon lights illuminating buildings, cyberpunk aesthetic, holographic billboards, sleek architectural design, dramatic purple and cyan hues, professional photography, cinematic composition",
+    "instructions": "instructions",
+    "after_edit": "after Edit with AI",
+    "edit_step1": "Enter the image prompt you want to edit in Text Prompt Generator",
+    "edit_step2": "Click the \"Edit with AI\" button",
+    "edit_step3": "Write down your edit instruction and wait a few seconds",
+    "edit_step4": "Review the edited image prompt",
+    "edit_step5": "Use your edited image prompt or further edit it if needed",
+    "step_1_edit": "Enter the image prompt you want to edit in Text Prompt Generator",
+    "step_2_edit": "Click the \"Edit with AI\" button",
+    "step_3_edit": "Write down your edit instruction and wait a few seconds",
+    "step_4_edit": "Review the edited image prompt",
+    "step_5_edit": "Use your edited image prompt or further edit it if needed",
+    "translate": "Translate",
+    "translate_title": "Translate",
+    "translate_desc": "Seamlessly translate image prompts between languages",
+    "translate_example_input": "A serene Japanese zen garden, blooming cherry blossom trees, stone pathways, peaceful koi pond, soft natural lighting, tranquil atmosphere",
+    "translate_example_after": "after Translate",
+    "translate_example_output": "一个宁静的日本禅宗花园，盛开的樱花树，石小路，宁静的锦鲤池，柔和的自然光，宁静的氛围",
+    "after_translate": "after Translate",
+    "translate_step1": "Enter the image prompt you want to translate in Text Prompt Generator",
+    "translate_step2": "Click the \"Translate\" button",
+    "translate_step3": "Choose your preferred target language and wait a few seconds",
+    "translate_step4": "Review the translated image prompt",
+    "translate_step5": "Use your translated image prompt or further edit it if needed",
+    "step_1_translate": "Enter the image prompt you want to translate in Text Prompt Generator",
+    "step_2_translate": "Click the \"Translate\" button",
+    "step_3_translate": "Choose your preferred target language and wait a few seconds",
+    "step_4_translate": "Review the translated image prompt",
+    "step_5_translate": "Use your translated image prompt or further edit it if needed",
+    "faq_title": "Frequently asked questions",
+    "faq_subtitle": "Do you have any questions? We have got you covered.",
+    "faq1_q": "What is Text Prompt Generator?",
+    "faq1_a": "Text Prompt Generator is a versatile tool designed to enhance your AI image generation process. It empowers you to create detailed, descriptive image prompts from simple ideas, allowing for better control over AI-generated artwork using tools like Midjourney, DALL-E, and Stable Diffusion.",
+    "faq2_q": "How does Magic Enhance work?",
+    "faq2_a": "Magic Enhance uses advanced AI to automatically expand and enrich your simple text into detailed, descriptive prompts. It adds relevant details about style, lighting, composition, and atmosphere based on your input, saving you time while improving prompt quality.",
+    "faq3_q": "Can I use these prompts with any AI image generator?",
+    "faq3_a": "Yes! The prompts generated by our tool are versatile and work with all major AI art platforms including Midjourney, DALL-E, Stable Diffusion, Leonardo AI, and more. The detailed descriptions help achieve consistent, high-quality results across different platforms.",
+    "faq4_q": "What languages are supported for translation?",
+    "faq4_a": "We support translation between multiple languages including English, Chinese, Spanish, French, German, Japanese, Korean, Portuguese, Russian, Arabic, and Italian. This helps users work in their preferred language and ensures global accessibility.",
+    "faq_q1": "What is Text Prompt Generator?",
+    "faq_a1": "Text Prompt Generator is a versatile tool designed to enhance your AI image generation process. It empowers you to create detailed, descriptive image prompts from simple ideas, allowing for better control over AI-generated artwork using tools like Midjourney, DALL-E, and Stable Diffusion.",
+    "faq_q2": "How does Magic Enhance work?",
+    "faq_a2": "Magic Enhance uses advanced AI to automatically expand and enrich your simple text into detailed, descriptive prompts. It adds relevant details about style, lighting, composition, and atmosphere based on your input, saving you time while improving prompt quality.",
+    "faq_q3": "Can I use these prompts with any AI image generator?",
+    "faq_a3": "Yes! The prompts generated by our tool are versatile and work with all major AI art platforms including Midjourney, DALL-E, Stable Diffusion, Leonardo AI, and more. The detailed descriptions help achieve consistent, high-quality results across different platforms.",
+    "faq_q4": "What languages are supported for translation?",
+    "faq_a4": "We support translation between multiple languages including English, Chinese, Spanish, French, German, Japanese, Korean, Portuguese, Russian, Arabic, and Italian. This helps users work in their preferred language and ensures global accessibility.",
+    "cta_text": "Want to generate prompts from existing images?",
+    "cta_link": "Try Image to Prompt",
+    "bottom_title": "AI-Powered Prompt Enhancement",
+    "bottom_subtitle": "Transform basic ideas into detailed, optimized prompts for AI image generation",
+    "bottom_desc": "Transform basic ideas into detailed, optimized prompts for AI image generation"
+  },
+  "videoToPrompt": {
+    "title": "Free Video Prompt Generator",
+    "subtitle": "Generate optimized prompts for AI video generation",
+    "api_not_configured": "API not configured - Configure Coze API for real results",
+    "api_checking": "Checking API status...",
+    "tab_text_to_video": "Text to Video",
+    "tab_image_to_video": "Image to Video",
+    "prompt_label": "Prompt",
+    "prompt_placeholder": "Enter your video idea here in simple text",
+    "processing": "Processing...",
+    "magic_enhance": "Magic Enhance",
+    "video_prompt_formula": "Video Prompt Formula:",
+    "formula_desc": "Subject + Movement + Scene + Camera + Lighting + Atmosphere",
+    "formula_tip1": "Describe the main subject in detail",
+    "formula_tip2": "Specify movement and actions clearly",
+    "formula_tip3": "Add scene description and environment",
+    "formula_tip4": "Optional: camera techniques and lighting",
+    "result_label": "Result",
+    "copy": "Copy",
+    "generating_message": "Generating video prompt...",
+    "generating_wait": "This may take a few seconds",
+    "result_placeholder": "Video prompt will appear here",
+    "result_hint": "Click Magic Enhance to start",
+    "use_as_input": "Use as Input",
+    "moved_to_input": "Moved to input",
+    "clear": "Clear",
+    "result_cleared": "Result cleared",
+    "upload_image": "Upload Image",
+    "upload_hint": "Upload a photo or drag and drop",
+    "upload_format": "PNG, JPG, or WEBP up to 4MB",
+    "camera_movement": "Camera Movement",
+    "camera_auto": "Auto",
+    "camera_static": "Static shot",
+    "camera_tracking": "Subject Tracking",
+    "camera_handheld": "Handheld",
+    "camera_push_in": "Push in",
+    "camera_pull_out": "Pull out",
+    "camera_zoom_in": "Zoom in",
+    "camera_zoom_out": "Zoom out",
+    "output_language": "Output Language",
+    "generate_prompt": "Generate Prompt",
+    "generating": "Generating...",
+    "generated_video_prompt": "Generated Video Prompt",
+    "analyzing_message": "Analyzing image and generating video prompt...",
+    "generated_placeholder": "Generated video prompt will appear here...",
+    "generated_hint": "Upload an image and click Generate to start",
+    "what_is_title": "What is a video prompt?",
+    "what_is_desc": "A video prompt is a text description that guides AI in generating videos. It should include subject details, actions, scene description, and optional camera/lighting specifications in a single descriptive sentence.",
+    "what_makes_good_title": "What makes a good video prompt?",
+    "what_makes_good_desc": "A good video prompt includes specific subject details, clear movement descriptions, defined scene elements, and optional camera techniques—all concisely written in a single descriptive sentence.",
+    "how_to_use_title": "How to Use Image to Video Prompt Generator",
+    "i2v_step1": "Upload an image you want to convert to a video prompt",
+    "i2v_step2": "Select your preferred camera movement",
+    "i2v_step3": "Choose your output language",
+    "i2v_step4": "Click \"Generate Prompt\" button",
+    "i2v_step5": "Copy and use in AI image-to-video generators",
+    "error_enter_prompt": "Please enter a prompt first",
+    "error_upload_first": "Please upload an image first",
+    "error_generate_failed": "Failed to generate video prompt. Please try again.",
+    "success_generated": "Video prompt generated successfully!",
+    "success_copied": "Video prompt copied to clipboard",
+    "file_too_large": "File too large. Please upload an image smaller than 4MB",
+    "invalid_file_type": "Invalid file type. Please drop an image file",
+    "cta_text": "Want to analyze specific aspects like art style or describe people in the image? Try our",
+    "cta_link": "AI Describe Image",
+    "cta_suffix": "tool for detailed analysis.",
+    "bottom_title": "Highly Accurate Image to Prompt Generation",
+    "bottom_subtitle": "Convert original images to prompts and regenerated with AI to see our prompt accuracy"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Empowering Everyone to Create with AI",
+    "story_title": "Our Story",
+    "story_content": "We founded Pixmind because AI art creation was becoming increasingly powerful yet remained challenging for many to master. We believe everyone deserves the opportunity to express creativity through AI, regardless of technical background or language proficiency.",
+    "mission_title": "Our Mission",
+    "mission_content": "To make AI art creation more intuitive and accessible to everyone, breaking down technical barriers and language limitations.",
+    "values_title": "Our Values",
+    "values_content": "We prioritize simplicity, creativity, and inclusivity. Every feature we develop aims to embody these principles.",
+    "value_simplicity": "Simplicity",
+    "value_simplicity_desc": "Easy to use, powerful results",
+    "value_creativity": "Creativity",
+    "value_creativity_desc": "Unleash your imagination",
+    "value_inclusivity": "Inclusivity",
+    "value_inclusivity_desc": "For everyone, everywhere",
+    "contact_title": "Get in Touch",
+    "contact_content": "Interested in collaboration? We welcome inquiries in technical integration and content creation.",
+    "contact_button": "Contact Us",
+    "copyright": "© 2025 Pixmind. All rights reserved."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Have questions? We'd love to hear from you. Get in touch with us through the following channels.",
+    "testimonial_title": "Loving Pixmind?",
+    "testimonial_content": "Share your experience! Your testimonial inspires others and helps us improve.",
+    "testimonial_button": "Share Your Testimonial",
+    "email_title": "Email Us",
+    "email_content": "Send us an email and we'll get back to you as soon as possible.",
+    "email_address": "pixmind.service@aimix.pro",
+    "social_title": "Follow us on X",
+    "social_content": "Stay updated with our latest features and announcements.",
+    "social_handle": "@SplendorZhang"
+  },
+  "imageToImage": {
+    "title_ai": "AI ",
+    "title_image_to_image": "Image to Image",
+    "title_generator": "Generator",
+    "subtitle": "Generate new AI images from reference images",
+    "description": "Upload reference images and AI will generate new artwork for you",
+    "coming_soon": "Feature coming soon...",
+    "metadata_title": "Image to Image - AI图片转图片 | 免费在线工具",
+    "metadata_description": "强大的AI图片转图片工具。通过参考图片生成新的AI图片，支持风格迁移和图片变换。"
+  },
+  "imageCompress": {
+    "title": "Image Compression Tool",
+    "subtitle": "Compress images without losing quality - Fast, secure, and free",
+    "output_format": "Output Format",
+    "output_format_desc": "Choose the format for compressed images",
+    "format_auto": "Auto",
+    "upload_title": "Drop your images here",
+    "upload_description": "or click to select files",
+    "select_images": "Select Images",
+    "supported_formats": "Supports PNG, JPEG, and WebP (max 10MB per file)",
+    "images_compressed": "Images Compressed",
+    "total_saved": "Total Saved",
+    "average_reduction": "Average Reduction",
+    "download_all": "Download All",
+    "clear_all": "Clear All",
+    "compressing": "Compressing images...",
+    "original_size": "Original size",
+    "compressed_size": "Compressed size",
+    "savings": "Savings",
+    "download": "Download",
+    "invalid_file_type": "Invalid file type. Please upload PNG, JPEG, or WebP images.",
+    "file_too_large": "File too large. Maximum size is 10MB.",
+    "compression_failed": "Compression failed. Please try again.",
+    "compression_success": "Images compressed successfully!",
+    "download_success": "Image downloaded successfully!",
+    "how_it_works_title": "How It Works",
+    "step1_title": "Upload Images",
+    "step1_desc": "Select or drag and drop your images (PNG, JPEG, WebP)",
+    "step2_title": "Auto Compress",
+    "step2_desc": "Images are automatically compressed using smart algorithms",
+    "step3_title": "Download",
+    "step3_desc": "Download compressed images individually or all at once",
+    "faq_title": "Frequently Asked Questions",
+    "faq_q1": "Is my image data secure?",
+    "faq_a1": "Yes! All compression is done locally in your browser. Your images never leave your device and are not uploaded to any server.",
+    "faq_q2": "What image formats are supported?",
+    "faq_a2": "We support PNG, JPEG, and WebP formats. Each image can be up to 10MB in size.",
+    "faq_q3": "Will compression reduce image quality?",
+    "faq_a3": "Our compression algorithm is designed to reduce file size while maintaining high visual quality. The quality reduction is typically imperceptible to the human eye."
+  },
+  "homepage": {
+    "hero": {
+      "title_free": "Free",
+      "title_main": "Work side by side with AI to turn ideas into reality.",
+      "title_generator": "Generator",
+      "subtitle": "From concept to creation, PixMind fuels your creative fire.",
+      "description": "Create stunning visuals with AI. Powered by Nano Banana, Imagen, Veo3.1, and Pixverse.",
+      "try_now": "Try it now!",
+      "tutorials": "Tutorials"
+    },
+    "features": {
+      "image_to_prompt": {
+        "title": "Image to Prompt Converter",
+        "description": "Advanced image to prompt generator - Convert any image to detailed AI prompts instantly"
+      },
+      "ai_image_generate": {
+        "title": "AI Image Generate",
+        "description": "Transform your text prompts into stunning AI-generated images with advanced models"
+      },
+      "ai_video_generate": {
+        "title": "AI Video Generate",
+        "description": "Create amazing AI-generated videos from text or images with cutting-edge video models"
+      }
+    },
+    "suite": {
+      "title": "Professional Image to Prompt Generator Suite",
+      "description": "The most comprehensive image prompt generator toolkit - From image to prompt and back to image",
+      "cards": {
+        "image_to_prompt": {
+          "title": "Image to Prompt",
+          "description": "Transform your image into detailed image prompt with Image to Prompt, enhancing your creative process and optimizing AI-driven design efficiency.",
+          "button": "Generate Prompt"
+        },
+        "prompt_generator": {
+          "title": "Image Prompt Generator",
+          "description": "Enhance your AI image generation with our Image Prompt Generator. Turn your idea into detailed, AI-optimized prompts, whether you're fluent in English or not.",
+          "button": "Generate Prompt"
+        },
+        "ai_image_generator": {
+          "title": "AI Image Generator",
+          "description": "Use Image Prompt to effortlessly generate stunning images, enhancing creativity and streamlining your design process with AI-powered precision.",
+          "button": "Generate Image Now!"
+        },
+        "ai_describe_image": {
+          "title": "AI Describe Image",
+          "description": "Let AI help you understand any image - get detailed descriptions, recognize objects, or ask your own questions",
+          "button": "Generate Description"
+        }
+      }
+    },
+    "why_choose": {
+      "title": "Why Choose Our Image to Prompt Generator?",
+      "what_is": {
+        "title": "What is Image to Prompt?",
+        "text_1": "Image to prompt",
+        "text_2": " technology uses advanced AI to analyze any image and generate detailed text descriptions that can be used as prompts for AI art generators. Our ",
+        "text_3": "image to prompt generator",
+        "text_4": " supports all major platforms including Midjourney, DALL-E, and Stable Diffusion.",
+        "text_5": "Whether you're looking to recreate a style, understand composition, or generate similar artwork, our ",
+        "text_6": "image prompt",
+        "text_7": " tools provide the perfect solution."
+      },
+      "how_works": {
+        "title": "How Our Prompt Generator Works",
+        "text_1": "Our ",
+        "text_2": "prompt generator",
+        "text_3": " uses state-of-the-art vision AI models to understand images at multiple levels - from basic objects and scenes to artistic styles, composition, and mood.",
+        "step_1": "Upload any image to our image prompt analyzer",
+        "step_2": "AI processes and extracts detailed descriptions",
+        "step_3": "Receive optimized prompts for your preferred AI tool",
+        "step_4": "Use generated prompts to create new AI artwork"
+      },
+      "features_section": {
+        "title": "Features of Our Image to Prompt Generator",
+        "accurate_analysis_title": "✨ Accurate Image Analysis",
+        "accurate_analysis_desc": "Our image to prompt AI accurately identifies objects, styles, colors, and composition",
+        "fast_generation_title": "🚀 Fast Prompt Generation",
+        "fast_generation_desc": "Generate image prompts in seconds with our optimized prompt generator engine",
+        "multi_platform_title": "🎨 Multi-Platform Support",
+        "multi_platform_desc": "Image prompts optimized for Midjourney, DALL-E, Stable Diffusion, and more",
+        "customizable_title": "🔧 Customizable Output",
+        "customizable_desc": "Adjust prompt generator settings for different styles and detail levels",
+        "smart_enhancement_title": "💡 Smart Enhancement",
+        "smart_enhancement_desc": "Our image to prompt generator adds artistic keywords automatically",
+        "free_to_use_title": "🆓 Free to Use",
+        "free_to_use_desc": "Start using our image prompt generator completely free, no credit card required"
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1_question": "What is PixMind?",
+      "q1_answer": "PixMind is an all-in-one AI platform for image and video creation. Generate images, create videos, enhance quality, and more—with a comprehensive suite of tools designed to produce high-quality visuals effortlessly. Whether you're working on personal projects or professional content, PixMind helps you create stunning results—fast, simple, and hassle-free.",
+      "q2_question": "Is PixMind suitable for beginners?",
+      "q2_answer": "Yes, PixMind is designed to be user-friendly, making it suitable for both beginners and professionals. Its intuitive interface and powerful AI tools enable users to create high-quality designs without prior design experience or learning costs.",
+      "q3_question": "How can I get started with PixMind?",
+      "q3_answer": "Getting started is easy. Just open PixMind in your browser, choose the tool you need, and enter a prompt or upload an image. It's beginner-friendly and takes only a few seconds.",
+      "q4_question": "Do I need design or technical skills to use PixMind?",
+      "q4_answer": "No. PixMind is built for everyone. Its intuitive interface allows anyone, even without design experience, to create professional visuals quickly."
+    },
+    "showcase": {
+      "card1": {
+        "title": "Bring Still Images to Life with AI-Powered Animation",
+        "description": "Transform any photo into captivating motion. Our AI breathes life into static images—anime art, oil paintings, or real photos. Upload your image and watch as AI preserves every detail while adding fluid, natural movement.",
+        "feature1_title": "Works with Any Style",
+        "feature1_desc": "From cartoon to photorealistic, AI adapts seamlessly.",
+        "feature2_title": "Perfect Consistency",
+        "feature2_desc": "Maintains expressions and backgrounds accurately.",
+        "start_creating": "Start creating"
+      },
+      "card2": {
+        "title": "Turn Ideas into Videos with AI",
+        "description": "Generate captivating videos from text prompts or images in seconds. PixMind empowers you to turn ideas into high-quality visuals without editing experience. Control the look and feel of your video by modifying the prompt, animate a still photo into a dynamic clip, or access powerful models like Veo 3.1 and Seedance to create short-form videos, product showcases, or social media content with ease.",
+        "start_creating": "Start creating"
+      },
+      "card3": {
+        "title": "Effortless AI Image Generation for All",
+        "description": "Turn your ideas into stunning visuals in seconds with AI. Simply describe what you envision, and watch as PixMind generates images that bring your concept to life. Need precise results? Upload a reference image to maintain style consistency and control the output. Go beyond basic generation—apply artistic filters and effects to transform any photo into sketches, anime art, oil paintings, watercolors, pixel art, and more. Fast, intuitive, and endlessly creative.",
+        "start_creating": "Start creating"
+      }
+    },
+    "effects": {
+      "title": "Transform Text & Images into Videos with These Trending AI Video Effects",
+      "description": "Pixmind AI provides a variety of innovative AI video effects, including AI Kiss, AI Hug, AI Inflate, and more. Unleash your creativity now with these trending AI video generators!"
+    }
+  },
+  "affiliate": {
+    "title": "Affiliate Program",
+    "subtitle": "Invite friends to earn commissions",
+    "rules_title": "Affiliate Rules",
+    "rules_desc": "Promotion Steps:",
+    "rule_1": "Copy the referral link and share it on social media",
+    "rule_2": "When users register through your link, they become your referrals",
+    "rule_3": "Earn commission from every purchase made by your referrals",
+    "rule_4": "Commission is frozen for 30 days before withdrawal",
+    "level_one": "Level 1 Affiliate",
+    "level_one_desc": "Earn 10% commission from direct referrals",
+    "rate_20": "10% Commission",
+    "income_stats": "My Earnings",
+    "currency_yuan": "Commission frozen for 30 days",
+    "available_income": "Available Commission ($)",
+    "frozen_income": "Frozen Commission ($)",
+    "today_income": "Yesterday's Commission ($)",
+    "total_income": "Total Withdrawn ($)",
+    "withdraw": "Withdraw",
+    "withdraw_desc": "(Both inviter and invitee get 1200 credits when new users register through your link)",
+    "my_promotion": "My Promotion",
+    "referral_link": "My Referral Link",
+    "referral_code": "My Referral Code",
+    "copy_link": "Copy Link",
+    "copy_code": "Copy Code",
+    "copy_success": "Copied successfully",
+    "copy_failed": "Copy failed",
+    "my_referrals": "My Referrals",
+    "referral_count": "Referral Count",
+    "total_orders": "Total Orders",
+    "commission_details": "Commission Details",
+    "no_referrals": "No referrals yet",
+    "no_records": "No commission records",
+    "referral_time": "Registration Time",
+    "order_time": "Order Time",
+    "order_amount": "Order Amount",
+    "commission_amount": "Commission Amount",
+    "commission_status": "Status",
+    "status_pending": "Pending",
+    "status_frozen": "Frozen",
+    "status_available": "Available",
+    "status_withdrawn": "Withdrawn",
+    "withdraw_history": "Withdrawal History",
+    "withdraw_amount": "Withdrawal Amount",
+    "withdraw_time": "Withdrawal Time",
+    "withdraw_status": "Withdrawal Status"
+  }
+}
