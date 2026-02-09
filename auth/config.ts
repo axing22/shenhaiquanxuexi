@@ -6,8 +6,10 @@ import { getUuid } from "@/lib/hash";
 import { getIsoTimestr } from "@/lib/time";
 import { getClientIp } from "@/lib/ip";
 
-const GOOGLE_ENABLED = process.env.AUTH_GOOGLE_ENABLED === "true" || process.env.NEXT_PUBLIC_AUTH_GOOGLE_ENABLED === "true";
-const GOOGLE_ONE_TAP_ENABLED = process.env.AUTH_GOOGLE_ONE_TAP_ENABLED === "true" || process.env.NEXT_PUBLIC_AUTH_GOOGLE_ONE_TAP_ENABLED === "true";
+// 临时硬编码启用 Google 登录
+// TODO: 等待 Vercel 环境变量问题解决后，恢复使用环境变量检查
+const GOOGLE_ENABLED = true;
+const GOOGLE_ONE_TAP_ENABLED = false;
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   providers: [

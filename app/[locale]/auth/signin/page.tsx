@@ -14,9 +14,9 @@ export default async function SignInPage({
     redirect(params.callbackUrl || "/");
   }
 
-  // 在服务器端检查环境变量
-  const isGoogleEnabled = process.env.AUTH_GOOGLE_ENABLED === "true" ||
-                          process.env.NEXT_PUBLIC_AUTH_GOOGLE_ENABLED === "true";
+  // 临时硬编码启用 Google 登录
+  // TODO: 等待 Vercel 环境变量问题解决后，恢复使用环境变量检查
+  const isGoogleEnabled = true;
 
   return (
     <div className="flex min-h-screen items-center justify-center">
