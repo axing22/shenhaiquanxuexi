@@ -35,12 +35,32 @@ export async function GET(request: NextRequest) {
 
     const accessToken = await authClient.getAccessToken();
 
+    // 提取 token 字符串
+    let token: string;
+    if (typeof accessToken === 'string') {
+      token = accessToken;
+    } else if (accessToken && typeof accessToken === 'object' && 'token' in accessToken) {
+      token = (accessToken as { token: string }).token;
+    } else {
+      return NextResponse.json(
+        { code: 500, message: 'Failed to get access token' },
+        { status: 500 }
+      );
+    }
+
+    if (!token) {
+      return NextResponse.json(
+        { code: 500, message: 'Failed to get access token' },
+        { status: 500 }
+      );
+    }
+
     // 测试列出可用模型
     const listModelsUrl = `https://${GOOGLE_LOCATION}-aiplatform.googleapis.com/v1/projects/${GOOGLE_PROJECT_ID}/locations/${GOOGLE_LOCATION}/publishers/google/models`;
 
     const response = await axios.get(listModelsUrl, {
       headers: {
-        'Authorization': `Bearer ${accessToken.token}`,
+        'Authorization': `Bearer ${token}`,
       }
     });
 
