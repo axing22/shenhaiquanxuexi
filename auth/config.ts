@@ -6,8 +6,8 @@ import { getUuid } from "@/lib/hash";
 import { getIsoTimestr } from "@/lib/time";
 import { getClientIp } from "@/lib/ip";
 
-const GOOGLE_ENABLED = process.env.NEXT_PUBLIC_AUTH_GOOGLE_ENABLED === "true";
-const GOOGLE_ONE_TAP_ENABLED = process.env.NEXT_PUBLIC_AUTH_GOOGLE_ONE_TAP_ENABLED === "true";
+const GOOGLE_ENABLED = process.env.AUTH_GOOGLE_ENABLED === "true" || process.env.NEXT_PUBLIC_AUTH_GOOGLE_ENABLED === "true";
+const GOOGLE_ONE_TAP_ENABLED = process.env.AUTH_GOOGLE_ONE_TAP_ENABLED === "true" || process.env.NEXT_PUBLIC_AUTH_GOOGLE_ONE_TAP_ENABLED === "true";
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   providers: [
