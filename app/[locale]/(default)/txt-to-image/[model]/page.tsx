@@ -134,9 +134,9 @@ export default function TextToImagePage() {
 
     if (routeModel === 'all') return true; // 'all' 显示所有模型
 
-    // google-imagen 页面：只显示 Imagen-4 Standard, Ultra, Fast
+    // google-imagen 页面：显示所有 Google Imagen 模型
     if (routeModel === 'google-imagen') {
-      return m.id.includes('imagen-4');
+      return m.provider === 'google' && m.id.includes('imagen');
     }
 
     // nano-banana 页面：只显示 Evolink 的 nano-banana 模型
@@ -219,45 +219,26 @@ export default function TextToImagePage() {
             supportsImageToImage: true
           },
           {
-            id: 'gemini-2.5-flash-imagen-3',
-            name: 'Gemini 2.5 Flash (Imagen 3)',
-            model: 'gemini-2.5-flash',
-            description: 'Google Gemini 2.5 Flash with Imagen 3 support',
-            provider: 'google-gemini',
-            supportsTextToImage: true,
-            supportsImageToImage: true
-          },
-          {
-            id: 'imagen-4-standard',
-            name: 'Imagen 4 Standard',
-            model: 'imagen-4-standard',
-            description: 'Google Imagen 4 标准版',
+            id: 'imagen-3.0-generate-001',
+            name: 'Imagen 3.0 (推荐)',
+            model: 'imagen-3.0-generate-001',
+            description: 'Google Imagen 3.0 - 高质量图像生成',
             provider: 'google',
             supportsTextToImage: true,
-            supportsImageToImage: true
+            supportsImageToImage: false
           },
           {
-            id: 'imagen-4-ultra',
-            name: 'Imagen 4 Ultra',
-            model: 'imagen-4-ultra',
-            description: 'Google Imagen 4 超高质量版',
+            id: 'imagen-3.0-fast-generate-001',
+            name: 'Imagen 3.0 Fast',
+            model: 'imagen-3.0-fast-generate-001',
+            description: 'Google Imagen 3.0 Fast - 快速生成',
             provider: 'google',
             supportsTextToImage: true,
-            supportsImageToImage: true
-          },
-          {
-            id: 'imagen-4-fast',
-            name: 'Imagen 4 Fast',
-            model: 'imagen-4-fast',
-            description: 'Google Imagen 4 快速版',
-            provider: 'google',
-            supportsTextToImage: true,
-            supportsImageToImage: true
+            supportsImageToImage: false
           }
         ];
 
         const result = { code: 1000, data: mockModels, message: 'success' };
-        console.log('[TextToImage] 模型列表响应数据:', JSON.stringify(result, null, 2));
 
         if (result.code === 1000 && result.data) {
           setModels(result.data);
@@ -271,9 +252,9 @@ export default function TextToImagePage() {
 
             if (routeModel === 'all') return true;
 
-            // google-imagen 页面：只显示 Imagen-4 Standard, Ultra, Fast
+            // google-imagen 页面：显示所有 Google Imagen 模型
             if (routeModel === 'google-imagen') {
-              return m.id.includes('imagen-4');
+              return m.provider === 'google' && m.id.includes('imagen');
             }
 
             // nano-banana 页面：只显示 Evolink 的 nano-banana 模型
@@ -334,38 +315,23 @@ export default function TextToImagePage() {
           // 设置默认模型
           if (filtered.length > 0) {
             setModel(filtered[0].id);
-            console.log('[TextToImage] ✅ 文生图：成功加载', filtered.length, '个模型');
-            console.log('[TextToImage] 默认模型设置为:', filtered[0].id, '-', filtered[0].name);
-            console.log('[TextToImage] 所有过滤后的模型:', filtered.map((m: ImageModel) => `${m.id} (${m.name})`).join(', '));
-          } else {
-            console.warn('[TextToImage] ⚠️ 没有匹配的模型，路由参数:', routeModel);
-            console.warn('[TextToImage] 所有可用模型:', result.data.map((m: ImageModel) => `${m.id} (provider: ${m.provider})`).join(', '));
           }
 
           // 设置图生图默认模型
           if (i2iFiltered.length > 0) {
             setI2iModel(i2iFiltered[0].id);
-            console.log('[TextToImage] ✅ 图生图：成功加载', i2iFiltered.length, '个模型');
-            console.log('[TextToImage] 图生图默认模型设置为:', i2iFiltered[0].id, '-', i2iFiltered[0].name);
-            console.log('[TextToImage] 所有图生图模型:', i2iFiltered.map((m: ImageModel) => `${m.id} (${m.name}, supportsI2I: ${m.supportsImageToImage})`).join(', '));
-          } else {
-            console.warn('[TextToImage] ⚠️ 没有找到支持图生图的模型');
           }
-        } else {
-          console.error('[TextToImage] ❌ 获取模型列表失败 - Code:', result.code, 'Message:', result.message);
-          toast.error(`获取模型列表失败: ${result.message || '未知错误'}`);
         }
       } catch (error) {
-        console.error('[TextToImage] ❌ 获取模型列表异常:', error);
+        console.error('[TextToImage] 获取模型列表异常:', error);
         toast.error('获取模型列表失败，请检查网络连接');
       } finally {
         setIsLoadingModels(false);
-        console.log('[TextToImage] ===== 模型列表获取完成 =====');
       }
     };
 
     fetchModels();
-  }, [routeModel]); // 依赖路由参数，路由改变时重新获取
+  }, [params?.model]); // 依赖路由参数，路由改变时重新获取
 
   // 保存当前页面URL，用于登录后跳转回来
   const saveRedirectUrl = () => {
@@ -490,7 +456,7 @@ export default function TextToImagePage() {
       }
 
       // Google Imagen 模型（同步 API）
-      const googleModels = ['imagen-4-standard', 'imagen-4-ultra', 'imagen-4-fast', 'gemini-2.5-flash-imagen-3'];
+      const googleModels = ['imagen-3.0-generate-001', 'imagen-3.0-fast-generate-001'];
       console.log('[TextToImage] 选中的模型 ID:', model);
       console.log('[TextToImage] Google 模型列表:', googleModels);
       console.log('[TextToImage] 是否匹配:', googleModels.includes(model));
@@ -511,6 +477,7 @@ export default function TextToImagePage() {
           // 调用 Google Imagen API
           const response = await fetch('/api/ai/imagen/generate', {
             method: 'POST',
+            credentials: 'include', // 发送 NextAuth session cookie
             headers: {
               'Content-Type': 'application/json',
             },
@@ -528,6 +495,11 @@ export default function TextToImagePage() {
 
           if (result.code !== 1000) {
             throw new Error(result.message || '生成失败');
+          }
+
+          // 检查返回的数据
+          if (!result.data || !result.data.images || result.data.images.length === 0) {
+            throw new Error('未返回生成的图片，请稍后重试');
           }
 
           // Google Imagen 直接返回 base64 编码的图片
@@ -623,6 +595,71 @@ export default function TextToImagePage() {
     setGeneratedI2IImage(null);
 
     try {
+      const googleModels = ['imagen-3.0-generate-001', 'imagen-3.0-fast-generate-001'];
+
+      // Google Imagen 模型使用 JSON API
+      if (googleModels.includes(i2iModel)) {
+        console.log('[ImageToImage] 使用 Google Imagen API 生成图片');
+
+        // 将图片转换为 base64
+        const reader = new FileReader();
+        const imageBase64 = await new Promise<string>((resolve, reject) => {
+          reader.onload = () => {
+            const result = reader.result as string;
+            resolve(result);
+          };
+          reader.onerror = reject;
+          reader.readAsDataURL(referenceImage);
+        });
+
+        const aspectRatioMap: Record<string, string> = {
+          '1:1': '1:1',
+          '16:9': '16:9',
+          '9:16': '9:16',
+          '4:3': '4:3',
+          '3:4': '3:4'
+        };
+
+        const response = await fetch('/api/ai/imagen/image-to-image', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            prompt: i2iPrompt,
+            model: i2iModel,
+            aspectRatio: aspectRatioMap[i2iAspectRatio] || '1:1',
+            numberOfImages: 1,
+            imageBase64: imageBase64,
+          }),
+        });
+
+        const result = await response.json();
+        console.log('[ImageToImage] Google Imagen API 响应:', result);
+
+        if (result.code === 401 || response.status === 401) {
+          console.error('[ImageToImage] 登录失效:', result.message);
+          authEventBus.emit({
+            type: 'login-expired',
+            message: result.message || t('login_expired')
+          });
+          toast.error(result.message || t('login_expired'));
+          return;
+        }
+
+        if (result.code === 1000 && result.data?.images && result.data.images.length > 0) {
+          const imageUrl = result.data.images[0];
+          setGeneratedI2IImage(imageUrl);
+          toast.success(t('generation_success'));
+        } else {
+          console.error('[ImageToImage] 生成失败:', result);
+          toast.error(result.message || t('generation_failed'));
+        }
+
+        return;
+      }
+
+      // 其他模型使用 FormData API
       const formData = new FormData();
       formData.append('image', referenceImage);
       formData.append('prompt', i2iPrompt);

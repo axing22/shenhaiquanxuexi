@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import axios, { type AxiosInstance, type InternalAxiosRequestConfig, type AxiosError } from 'axios';
+import axios, { type AxiosInstance, type InternalAxiosRequestConfig } from 'axios';
 import { log, logError } from '@/lib/logger';
 import { auth } from '@/auth';
 
@@ -88,24 +88,17 @@ export async function POST(request: NextRequest) {
       aspectRatio = '1:1',
       numberOfImages = 1,
       negativePrompt,
-      seed
+      seed,
+      imageBase64 // 输入图片的 base64 编码
     } = body;
 
-    log('[Imagen Generate] 收到请求:', {
+    log('[Imagen Image-to-Image] 收到请求:', {
       user: session.user.email,
       prompt,
       model,
       aspectRatio,
-      numberOfImages
-    });
-
-    log('[Imagen Generate] 环境变量检查:', {
-      hasProjectId: !!process.env.GOOGLE_PROJECT_ID,
-      projectId: process.env.GOOGLE_PROJECT_ID,
-      hasLocation: !!process.env.GOOGLE_LOCATION,
-      location: process.env.GOOGLE_LOCATION,
-      hasCredentials: !!process.env.GOOGLE_CREDENTIALS,
-      credentialsLength: process.env.GOOGLE_CREDENTIALS?.length
+      numberOfImages,
+      hasImage: !!imageBase64
     });
 
     // 验证必需参数
@@ -116,11 +109,21 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    if (!imageBase64) {
+      return NextResponse.json(
+        { code: 400, message: 'imageBase64 is required for image-to-image' },
+        { status: 400 }
+      );
+    }
+
     // 构建符合 Vertex AI Imagen API 格式的请求
     const requestBody: Record<string, any> = {
       instances: [
         {
           prompt: prompt,
+          image: {
+            bytesBase64Encoded: imageBase64.replace(/^data:image\/\w+;base64,/, '')
+          }
         },
       ],
       parameters: {
@@ -139,21 +142,17 @@ export async function POST(request: NextRequest) {
     }
 
     // 构建完整的 API 端点 URL
-    // 格式: /publishers/google/models/{MODEL_VERSION}:predict
+    // 格式: /publishers/google/models/{MODEL}:predict
     const endpoint = `/publishers/google/models/${model}:predict`;
 
-    log('[Imagen Generate] 调用 Google Vertex AI API:', endpoint);
-    log('[Imagen Generate] 请求体:', JSON.stringify(requestBody, null, 2));
+    log('[Imagen Image-to-Image] 调用 Google Vertex AI API:', endpoint);
 
     const googleAxios = await createGoogleAxiosInstance();
     const response = await googleAxios.post(endpoint, requestBody);
 
-    log('[Imagen Generate] 响应成功:', {
+    log('[Imagen Image-to-Image] 响应成功:', {
       predictionsCount: response.data?.predictions?.length || 0
     });
-
-    // 打印完整响应用于调试
-    log('[Imagen Generate] 完整响应数据:', JSON.stringify(response.data, null, 2));
 
     // 提取 base64 编码的图片数据
     const predictions = response.data?.predictions || [];
@@ -178,7 +177,7 @@ export async function POST(request: NextRequest) {
       }
     });
   } catch (error: any) {
-    logError('[Imagen Generate] 错误:', error);
+    logError('[Imagen Image-to-Image] 错误:', error);
 
     // 提取更详细的错误信息
     let errorMessage = '生成失败';
