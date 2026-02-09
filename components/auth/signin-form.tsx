@@ -5,9 +5,13 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { FcGoogle } from "react-icons/fc";
 
-export default function SignInForm({ callbackUrl }: { callbackUrl?: string }) {
-  const isGoogleEnabled = process.env.NEXT_PUBLIC_AUTH_GOOGLE_ENABLED === "true";
-
+export default function SignInForm({
+  callbackUrl,
+  isGoogleEnabled
+}: {
+  callbackUrl?: string;
+  isGoogleEnabled: boolean;
+}) {
   const handleGoogleSignIn = () => {
     signIn("google", { callbackUrl: callbackUrl || "/" });
   };
@@ -30,7 +34,7 @@ export default function SignInForm({ callbackUrl }: { callbackUrl?: string }) {
             Continue with Google
           </Button>
         )}
-        
+
         {!isGoogleEnabled && (
           <p className="text-center text-sm text-muted-foreground">
             Google sign-in is currently disabled

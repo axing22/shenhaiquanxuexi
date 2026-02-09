@@ -14,9 +14,16 @@ export default async function SignInPage({
     redirect(params.callbackUrl || "/");
   }
 
+  // 在服务器端检查环境变量
+  const isGoogleEnabled = process.env.AUTH_GOOGLE_ENABLED === "true" ||
+                          process.env.NEXT_PUBLIC_AUTH_GOOGLE_ENABLED === "true";
+
   return (
     <div className="flex min-h-screen items-center justify-center">
-      <SignInForm callbackUrl={params.callbackUrl} />
+      <SignInForm
+        callbackUrl={params.callbackUrl}
+        isGoogleEnabled={isGoogleEnabled}
+      />
     </div>
   );
 }
