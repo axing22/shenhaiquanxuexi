@@ -3,6 +3,7 @@ import type { AxiosInstance } from 'axios';
 import { log, logError } from '@/lib/logger';
 import { auth } from '@/auth';
 import { createGoogleAuthAxios } from '@/lib/google-credentials';
+import { containsChinese, translateText, simpleTranslateText } from '@/lib/translate';
 
 // 创建 Google Vertex AI axios 实例(服务器端)
 async function createGoogleAxiosInstance(): Promise<AxiosInstance> {
@@ -44,9 +45,26 @@ export async function POST(request: NextRequest) {
       imageBase64 // 输入图片的 base64 编码
     } = body;
 
+    // Detect if prompt contains Chinese and translate if needed
+    let finalPrompt = prompt;
+    if (containsChinese(prompt)) {
+      log('[Imagen Image-to-Image] 检测到中文提示词，开始翻译:', prompt);
+      try {
+        // Try Google Cloud Translation API first
+        finalPrompt = await translateText(prompt, 'en');
+        log('[Imagen Image-to-Image] 翻译完成:', finalPrompt);
+      } catch (error) {
+        // Fallback to simple translation if Google Cloud fails
+        log('[Imagen Image-to-Image] Google翻译失败，尝试备用翻译方案');
+        finalPrompt = await simpleTranslateText(prompt);
+        log('[Imagen Image-to-Image] 备用翻译完成:', finalPrompt);
+      }
+    }
+
     log('[Imagen Image-to-Image] 收到请求:', {
       user: session.user.email,
-      prompt,
+      originalPrompt: prompt,
+      finalPrompt: finalPrompt !== prompt ? finalPrompt : undefined,
       model,
       aspectRatio,
       numberOfImages,
@@ -72,7 +90,7 @@ export async function POST(request: NextRequest) {
     const requestBody: Record<string, any> = {
       instances: [
         {
-          prompt: prompt,
+          prompt: finalPrompt,
           image: {
             bytesBase64Encoded: imageBase64.replace(/^data:image\/\w+;base64,/, '')
           }
@@ -86,7 +104,18 @@ export async function POST(request: NextRequest) {
 
     // 添加可选参数
     if (negativePrompt) {
-      requestBody.instances[0].negativePrompt = negativePrompt;
+      // Translate negative prompt if it contains Chinese
+      let finalNegativePrompt = negativePrompt;
+      if (containsChinese(negativePrompt)) {
+        log('[Imagen Image-to-Image] 检测到中文负面提示词，开始翻译:', negativePrompt);
+        try {
+          finalNegativePrompt = await translateText(negativePrompt, 'en');
+          log('[Imagen Image-to-Image] 负面提示词翻译完成:', finalNegativePrompt);
+        } catch (error) {
+          finalNegativePrompt = await simpleTranslateText(negativePrompt);
+        }
+      }
+      requestBody.instances[0].negativePrompt = finalNegativePrompt;
     }
 
     if (seed !== undefined) {
