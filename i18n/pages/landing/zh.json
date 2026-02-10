@@ -17,10 +17,10 @@
           "icon": "RiImageAiLine",
           "children": [
             {
-              "title": "Nano Banana",
-              "description": "Gemini 2.5 Flash 图像编辑器",
-              "url": "/txt-to-image/nano-banana",
-              "icon": "RiFlashlightLine"
+              "title": "Imagen 3.0 (推荐)",
+              "description": "Google Imagen 3.0 - 高质量图像生成",
+              "url": "/txt-to-image/google-imagen",
+              "icon": "RiSparklingLine"
             }
           ]
         },
@@ -163,8 +163,8 @@
           "title": "AI 图像",
           "children": [
             {
-              "title": "Nano Banana",
-              "url": "/txt-to-image/nano-banana",
+              "title": "Imagen 3.0 (推荐)",
+              "url": "/txt-to-image/google-imagen",
               "target": "_self"
             }
           ]

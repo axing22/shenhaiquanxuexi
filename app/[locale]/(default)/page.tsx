@@ -150,7 +150,7 @@ export default async function LandingPage({
                 <p className="text-muted-foreground leading-relaxed">
                   {t("showcase.card3.description")}
                 </p>
-                <Link href={`/${locale}/text-to-image`}>
+                <Link href={`/${locale}/txt-to-image/google-imagen`}>
                   <Button
                     size="lg"
                     className="rounded-full px-8"
