@@ -87,6 +87,9 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       : []),
   ],
 
+  // 信任自定义域名，解决 Vercel 部署时的认证问题
+  trustHost: true,
+
   callbacks: {
     async jwt({
       token,
