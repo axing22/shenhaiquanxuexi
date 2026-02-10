@@ -1,13 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
-import axios, { type AxiosInstance, type InternalAxiosRequestConfig } from 'axios';
+import type { AxiosInstance } from 'axios';
 import { log, logError } from '@/lib/logger';
 import { auth } from '@/auth';
+import { createGoogleAuthAxios } from '@/lib/google-credentials';
 
 // 创建 Google Vertex AI axios 实例(服务器端)
 async function createGoogleAxiosInstance(): Promise<AxiosInstance> {
   const GOOGLE_PROJECT_ID = process.env.GOOGLE_PROJECT_ID;
   const GOOGLE_LOCATION = process.env.GOOGLE_LOCATION || 'us-central1';
-  const GOOGLE_CREDENTIALS = process.env.GOOGLE_CREDENTIALS;
 
   const VERTEX_AI_BASE_URL = GOOGLE_PROJECT_ID && GOOGLE_LOCATION
     ? `https://${GOOGLE_LOCATION}-aiplatform.googleapis.com/v1/projects/${GOOGLE_PROJECT_ID}/locations/${GOOGLE_LOCATION}`
@@ -17,56 +17,8 @@ async function createGoogleAxiosInstance(): Promise<AxiosInstance> {
     throw new Error('Google Vertex AI credentials not configured');
   }
 
-  if (!GOOGLE_CREDENTIALS) {
-    throw new Error('GOOGLE_CREDENTIALS environment variable is not set');
-  }
-
-  const instance = axios.create({
-    baseURL: VERTEX_AI_BASE_URL,
-    timeout: 300000,
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  });
-
-  // 请求拦截器 - 添加 OAuth2 令牌
-  instance.interceptors.request.use(
-    async (config: InternalAxiosRequestConfig) => {
-      const { GoogleAuth } = await import('google-auth-library');
-
-      // 解析 GOOGLE_CREDENTIALS JSON 字符串
-      let credentials;
-      try {
-        credentials = typeof GOOGLE_CREDENTIALS === 'string'
-          ? JSON.parse(GOOGLE_CREDENTIALS)
-          : GOOGLE_CREDENTIALS;
-      } catch (error) {
-        throw new Error('Failed to parse GOOGLE_CREDENTIALS');
-      }
-
-      // 修复私钥中的换行符:将字面量 \n 转换为真正的换行符
-      if (credentials.private_key && typeof credentials.private_key === 'string') {
-        credentials.private_key = credentials.private_key.replace(/\\n/g, '\n');
-      }
-
-      // 使用明确的凭据创建 GoogleAuth
-      const auth = new GoogleAuth({
-        credentials: credentials,
-        scopes: 'https://www.googleapis.com/auth/cloud-platform',
-      });
-
-      const client = await auth.getClient();
-      const accessToken = await client.getAccessToken();
-
-      // accessToken 是一个对象，需要提取 token 属性
-      const token = typeof accessToken === 'string' ? accessToken : accessToken.token;
-
-      config.headers['Authorization'] = `Bearer ${token}`;
-      return config;
-    }
-  );
-
-  return instance;
+  // 使用工具函数创建 axios 实例，会自动处理 credentials 解析和 OAuth2
+  return createGoogleAuthAxios(VERTEX_AI_BASE_URL);
 }
 
 export async function POST(request: NextRequest) {
