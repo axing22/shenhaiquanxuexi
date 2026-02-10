@@ -18,21 +18,24 @@ export function parseGoogleCredentials(credentialsRaw: string | undefined): any 
   }
 
   try {
-    // 1. 移除首尾空白字符（包括 Vercel 添加的末尾 \n）
-    const trimmed = credentialsRaw.trim();
+    // 1. 移除首尾空白字符
+    let cleaned = credentialsRaw.trim();
 
-    // 2. 将字面量 \n 转换为真正的换行符
-    // 这是因为 Vercel 环境变量会将 JSON 中的换行符保存为字面量 \n
-    const cleaned = trimmed.replace(/\\n/g, '\n');
+    // 2. Vercel 环境变量的问题：
+    //    - 每个值末尾都添加了字面量 "\n"（从 .env.production 可以看到）
+    //    - 例如：AUTH_GOOGLE_ID="xxx\n"
+    //    - 对于 JSON 值，这会破坏 JSON 结构
+    // 解决方案：检查并移除末尾的字面量 \n
+    if (cleaned.endsWith('\\n')) {
+      cleaned = cleaned.slice(0, -2);
+    }
 
-    // 3. 解析 JSON
+    // 3. 现在 cleaned 应该是干净的 JSON 字符串
     const credentials = JSON.parse(cleaned);
 
-    // 4. 再次检查 private_key 中是否还有字面量 \n（双重转义的情况）
+    // 4. 处理私钥中的字面量 \n，转换为真正的换行符
     if (credentials.private_key && typeof credentials.private_key === 'string') {
-      if (credentials.private_key.includes('\\n')) {
-        credentials.private_key = credentials.private_key.replace(/\\n/g, '\n');
-      }
+      credentials.private_key = credentials.private_key.replace(/\\n/g, '\n');
     }
 
     return credentials;
