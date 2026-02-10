@@ -15,9 +15,9 @@ export default async function SignInPage({
   }
 
   // 从环境变量读取配置，如果有 AUTH_GOOGLE_ID 和 AUTH_GOOGLE_SECRET 就启用
-  const isGoogleEnabled = process.env.AUTH_GOOGLE_ENABLED === "true" ||
-                          process.env.NEXT_PUBLIC_AUTH_GOOGLE_ENABLED === "true" ||
-                          (process.env.AUTH_GOOGLE_ID && process.env.AUTH_GOOGLE_SECRET);
+  const isGoogleEnabled: boolean = process.env.AUTH_GOOGLE_ENABLED === "true" ||
+                                   process.env.NEXT_PUBLIC_AUTH_GOOGLE_ENABLED === "true" ||
+                                   (!!process.env.AUTH_GOOGLE_ID && !!process.env.AUTH_GOOGLE_SECRET);
 
   return (
     <div className="flex min-h-screen items-center justify-center">
